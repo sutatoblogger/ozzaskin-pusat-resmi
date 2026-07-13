@@ -89,15 +89,7 @@
               "name": "Cocok untuk kulit sensitif?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sangat cocok dan menutrisi kulit paling sensitif sekalipun."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Cara pesan original?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Klik tombol WhatsApp di layar ini, tim kami siap memandu Bunda."
+                "text": "Sangat cocok dan menutrisi kulit paling sensitif sekalipun tanpa kemerahan."
               }
             }
           ]
@@ -120,13 +112,13 @@
             color: #1A1A1A;
             margin: 0;
             padding: 0;
-            overflow-x: hidden; /* Mencegah scroll ke samping */
+            overflow-x: hidden;
         }
 
         /* MOBILE PROTECTION RULE (ANTI-TERTUTUP STICKY CTA) */
         @media (max-width: 768px) {
             body {
-                padding-bottom: 140px !important; /* Ruang lebih ekstra di mobile */
+                padding-bottom: 140px !important; 
             }
         }
 
@@ -225,14 +217,13 @@
             box-shadow: 0 0 0 3px rgba(74, 20, 140, 0.1);
         }
 
-        /* DUAL-TRAP CTA LAYER DENGAN LOGO AI (Dari Mothership) */
+        /* DUAL-TRAP CTA LAYER */
         .trap-container { position: fixed; bottom: 25px; width: 100%; padding: 0 25px; display: flex; justify-content: space-between; pointer-events: none; z-index: 9999; box-sizing: border-box; }
         .cta-btn { pointer-events: auto; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: transform 0.3s; }
         .cta-wa { background: #25D366; box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4); }
         .cta-wa:hover { transform: scale(1.12); }
         .cta-wa svg { fill: #fff; width: 32px; height: 32px; }
         
-        /* Modifikasi UI Logo AI dari referensi user */
         .cta-ai { background: #ffffff; border: 2px solid var(--luxury-purple); animation: jarvis-pulse-purple 2s infinite; overflow: hidden; }
         .cta-ai img { width: 100%; height: 100%; object-fit: contain; transform: scale(1.05); }
         @keyframes jarvis-pulse-purple {
@@ -241,38 +232,13 @@
             100% { box-shadow: 0 0 0 0 rgba(74, 20, 140, 0); }
         }
 
-        /* STATIC-AI FLOATING INTERFACE (LUXURY OZZASKIN THEME) */
-        .ai-chat-box {
-            display: none; position: fixed; bottom: 95px; left: 25px; width: 320px; 
-            background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); 
-            border: 1px solid var(--luxury-purple); border-radius: 16px; 
-            z-index: 9998; flex-direction: column; box-shadow: 0 15px 40px rgba(74, 20, 140, 0.2); 
-            overflow: hidden;
-        }
-        .ai-header {
-            background: var(--luxury-purple); color: var(--pure-white); padding: 12px 15px; 
-            font-weight: 700; display: flex; justify-content: space-between; align-items: center;
-        }
-        .ai-body {
-            height: 280px; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; font-size: 0.85rem; scroll-behavior: smooth; background: #F8FAFC;
-        }
-        .ai-footer {
-            padding: 10px; border-top: 1px solid #E5E7EB; display: flex; gap: 8px; background: #ffffff;
-        }
-        .ai-input {
-            flex-grow: 1; padding: 10px 14px; border-radius: 20px; border: 1px solid #D1D5DB; 
-            background: #F9FAFB; color: #1F2937; font-size: 0.85rem; outline: none; transition: 0.3s;
-        }
-        .ai-input:focus { border-color: var(--luxury-purple); }
-        
         /* Custom scrollbar AI */
-        .ai-body::-webkit-scrollbar { width: 4px; }
-        .ai-body::-webkit-scrollbar-track { background: transparent; }
-        .ai-body::-webkit-scrollbar-thumb { background: #D8B4E2; border-radius: 10px; }
+        .chat-stream::-webkit-scrollbar { width: 4px; }
+        .chat-stream::-webkit-scrollbar-track { background: transparent; }
+        .chat-stream::-webkit-scrollbar-thumb { background: #D8B4E2; border-radius: 10px; }
 
         @media (max-width: 400px) {
-             .trap-container { padding: 0 15px; } /* Sesuaikan posisi icon di HP kecil */
-             .ai-chat-box { left: 15px; right: 15px; width: auto; }
+             .trap-container { padding: 0 15px; }
         }
     </style>
 </head>
@@ -281,7 +247,11 @@
     <!-- HERO SECTION (CRO: Urgency & Zero-Fluff) -->
     <header class="bg-luxury-gradient text-white pt-20 pb-16 px-4 text-center border-b-[5px] border-[var(--accent-gold)]">
         <div class="max-w-3xl mx-auto">
-		<span class="section-badge">Official Brand Ustazah Oki Setiana Dewi</span>
+            <!-- SECTION BADGE ADDED HERE -->
+            <span class="inline-block border border-[var(--accent-gold)] text-[var(--accent-gold)] px-5 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-widest uppercase mb-5 shadow-sm bg-black/20">
+                OFFICIAL BRAND USTAZAH OKI SETIANA DEWI
+            </span>
+
             <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight mb-5">
                 Solusi Tuntas Flek Hitam & Kusam Tanpa Mengorbankan Ketenangan Hati Bunda
             </h1>
@@ -361,7 +331,7 @@
         </div>
     </section>
 
-    <!-- AEO VOICE FAQ SECTION -->
+    <!-- AEO VOICE FAQ SECTION (RESTORED TO 4 ITEMS) -->
     <section class="py-16 px-4 bg-white">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-10">
@@ -370,6 +340,7 @@
             </div>
 
             <div class="space-y-4">
+                <!-- FAQ 1 -->
                 <div class="p-5 bg-purple-50/50 rounded-xl border border-purple-100 flex justify-between items-start gap-4 shadow-sm hover:shadow-md transition">
                     <div class="flex-1">
                         <h3 class="font-bold text-purple-900 text-base mb-2">Apakah Ozzaskin aman untuk Ibu Hamil?</h3>
@@ -379,6 +350,7 @@
                         🔊 Putar
                     </button>
                 </div>
+                <!-- FAQ 2 -->
                 <div class="p-5 bg-purple-50/50 rounded-xl border border-purple-100 flex justify-between items-start gap-4 shadow-sm hover:shadow-md transition">
                     <div class="flex-1">
                         <h3 class="font-bold text-purple-900 text-base mb-2">Apakah sudah BPOM resmi?</h3>
@@ -388,6 +360,67 @@
                         🔊 Putar
                     </button>
                 </div>
+                <!-- FAQ 3 -->
+                <div class="p-5 bg-purple-50/50 rounded-xl border border-purple-100 flex justify-between items-start gap-4 shadow-sm hover:shadow-md transition">
+                    <div class="flex-1">
+                        <h3 class="font-bold text-purple-900 text-base mb-2">Kapan flek memudar?</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed" id="vFaqAns3">Bahan aktifnya bekerja optimal dalam beberapa minggu pemakaian rutin.</p>
+                    </div>
+                    <button onclick="executeSpeechSynthesis('vFaqAns3')" class="bg-purple-700 hover:bg-purple-800 text-white text-xs font-bold px-3 py-2 rounded-lg shrink-0 shadow transition flex items-center gap-1">
+                        🔊 Putar
+                    </button>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="p-5 bg-purple-50/50 rounded-xl border border-purple-100 flex justify-between items-start gap-4 shadow-sm hover:shadow-md transition">
+                    <div class="flex-1">
+                        <h3 class="font-bold text-purple-900 text-base mb-2">Cocok untuk kulit sensitif?</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed" id="vFaqAns4">Sangat cocok dan menutrisi kulit paling sensitif sekalipun tanpa kemerahan.</p>
+                    </div>
+                    <button onclick="executeSpeechSynthesis('vFaqAns4')" class="bg-purple-700 hover:bg-purple-800 text-white text-xs font-bold px-3 py-2 rounded-lg shrink-0 shadow transition flex items-center gap-1">
+                        🔊 Putar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INLINE AI CHATBOX SECTION (CENTERED, ELEGANT DESIGN) -->
+    <section id="konsultasi-ai" class="py-16 px-4 bg-gradient-to-b from-[#311B92] to-[#1F0D3D] text-white">
+        <div class="max-w-xl mx-auto text-center mb-8">
+            <h2 class="text-2xl md:text-3xl font-bold mb-3">Konsultasi Privat Ozzaskin</h2>
+            <p class="text-sm md:text-base text-purple-200">Ceritakan masalah kulit Bunda pada asisten AI cerdas kami di bawah ini.</p>
+        </div>
+
+        <div class="max-w-lg mx-auto rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-white text-gray-900 border border-purple-500/30">
+            <!-- Header Chat -->
+            <div class="bg-purple-800 p-4 text-white flex items-center gap-3">
+                <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse shadow-[0_0_8px_#4ADE80]"></div>
+                <div>
+                    <h3 class="font-bold text-sm md:text-base">Konsultan Kecantikan AI</h3>
+                    <p class="text-xs text-purple-200">Online 24/7</p>
+                </div>
+            </div>
+
+            <!-- Body Chat -->
+            <div class="p-5 h-[320px] overflow-y-auto bg-gray-50 flex flex-col gap-4 chat-stream" id="inlineChatStream">
+                <div class="bg-white p-3 md:p-4 rounded-2xl rounded-tl-sm shadow-sm text-sm border border-gray-200 max-w-[85%] self-start text-gray-800 leading-relaxed">
+                    Assalamualaikum Bunda... 😊<br><br>Selamat datang di Ozzaskin Official. Ada yang bisa kami bantu terkait keluhan flek membandel, konsultasi keamanan produk, atau info harga promo spesial hari ini?
+                </div>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div class="px-5 py-2 bg-gray-50 text-xs text-purple-600 font-medium italic hidden" id="inlineTypingIndicator">
+                Konsultan AI sedang mengetik...
+            </div>
+
+            <!-- Footer Chat / Input -->
+            <div class="p-3 bg-white border-t border-gray-200 flex gap-2 items-center">
+                <input type="text" id="inlineChatInput" placeholder="Ketik: 'flek', 'aman bumil', 'harga'..." 
+                       class="flex-1 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-purple-600 focus:bg-white transition"
+                       onkeydown="if(event.key === 'Enter') processInlineChat()">
+                <button onclick="processInlineChat()" class="bg-purple-700 hover:bg-purple-900 text-white px-5 py-3 rounded-xl text-sm font-bold transition shadow-md">
+                    Kirim
+                </button>
             </div>
         </div>
     </section>
@@ -398,35 +431,32 @@
             <div class="text-center mb-8">
                 <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-bold tracking-wider mb-3">LANGKAH TERAKHIR</span>
                 <h2 class="text-2xl md:text-3xl font-extrabold text-purple-900 mb-2">Formulir Pemesanan Eksklusif</h2>
-                <p class="text-gray-600 text-sm">Lengkapi data di bawah ini untuk mengamankan paket promo Ozzaskin. Data Anda terjamin keamanannya.</p>
+                <p class="text-gray-600 text-sm">Lengkapi data di bawah ini, pesanan Bunda akan otomatis masuk ke sistem prioritas WhatsApp kami.</p>
             </div>
             
             <form id="omniForm">
-                <!-- 1. KUNCI WEB3FORMS HARDCODE DARI MOTHERSHIP -->
+                <!-- KUNCI WEB3FORMS HARDCODE DARI MOTHERSHIP -->
                 <input type="hidden" name="access_key" value="bea8e485-773b-40a3-88f1-78a1fe496511">
                 
-                <!-- 2. IDENTITAS UNTUK SUBJECT EMAIL -->
+                <!-- IDENTITAS UNTUK SUBJECT EMAIL -->
                 <input type="hidden" name="subject" value="ORDER BARU: Ozzaskin Official">
                 <input type="hidden" name="brand_name" value="Ozzaskin Official">
                 <input type="hidden" name="source" value="OmniForm Landing Page">
                 
                 <div class="mb-4">
-                    <label class="block text-sm font-semibold text-gray-700 mb-1 ml-1">Nama Lengkap Bunda *</label>
-                    <input type="text" name="name" class="omni-input" placeholder="Misal: Bunda Aisyah" required>
+                    <input type="text" name="name" class="omni-input" placeholder="Nama Lengkap Bunda" required>
                 </div>
                 
                 <div class="mb-4">
-                    <label class="block text-sm font-semibold text-gray-700 mb-1 ml-1">Nomor WhatsApp Aktif *</label>
-                    <input type="text" name="whatsapp" class="omni-input" placeholder="Misal: 08123456789" required>
+                    <input type="text" name="whatsapp" class="omni-input" placeholder="Nomor WhatsApp (Contoh: 0812...)" required>
                 </div>
                 
                 <div class="mb-6">
-                    <label class="block text-sm font-semibold text-gray-700 mb-1 ml-1">Keluhan Kulit Saat Ini *</label>
-                    <textarea name="message" class="omni-input" placeholder="Tuliskan keluhan seperti (Flek membandel 3 tahun, kulit kusam, dll)..." required style="min-height: 100px; resize: vertical;"></textarea>
+                    <textarea name="message" class="omni-input" placeholder="Alamat lengkap pengiriman & detail paket pesanan..." required style="min-height: 100px; resize: vertical;"></textarea>
                 </div>
                 
                 <button type="submit" class="bg-purple-800 hover:bg-purple-900 text-white font-bold w-full py-4 rounded-xl text-lg transition shadow-lg flex justify-center items-center gap-2">
-                    KIRIM DATA & KLAIM PROMO
+                    KIRIM PESANAN SEKARANG
                 </button>
                 
                 <p id="formStatus" class="mt-4 text-sm text-emerald-600 text-center font-bold hidden bg-emerald-50 p-3 rounded-lg border border-emerald-200">
@@ -472,41 +502,19 @@
         </div>
     </footer>
 
-    <!-- DUAL-TRAP CTA LAYER -->
+    <!-- DUAL-TRAP CTA LAYER (Only WA & Anchor to AI Chat) -->
     <div class="trap-container">
-        <!-- Tombol AI -->
-        <div class="cta-btn cta-ai" id="ai-button" aria-label="Tanya Asisten AI">
+        <!-- Anchor to AI Section instead of opening a floating widget -->
+        <a href="#konsultasi-ai" class="cta-btn cta-ai" aria-label="Tanya Asisten AI">
             <img src="https://dongkrakusaha.com/gambarbebas/1142920260706-035633_logo%20ai%20tanya%20ai.webp" alt="Tanya AI Asisten" loading="lazy">
-        </div>
-        <!-- Tombol WA -->
+        </a>
+        <!-- WA Button -->
         <a href="https://wa.me/6281234567890?text=Assalamualaikum%20Ozzaskin,%20saya%20tertarik%20dengan%20promo%20penghilang%20flek%20hitam.%20Bisa%20dibantu?" target="_blank" rel="noopener noreferrer" class="cta-btn cta-wa" aria-label="WhatsApp">
             <svg viewBox="0 0 24 24"><path d="M12.031 21.5c-1.304 0-2.57-.34-3.69-1l-.26-.16-2.74.72.73-2.67-.17-.28c-.68-1.12-1.04-2.42-1.04-3.75 0-3.9 3.17-7.07 7.07-7.07 3.9 0 7.07 3.17 7.07 7.07s-3.17 7.07-7.07 7.07zm0-16.14c-4.99 0-9.05 4.06-9.05 9.05 0 1.6.42 3.16 1.22 4.54l-1.3 4.74 4.85-1.27c1.33.73 2.82 1.12 4.38 1.12 4.99 0 9.05-4.06 9.05-9.05 0-4.99-4.06-9.05-9.05-9.05zm4.97 12.35c-.27-.81-1.61-1.36-1.61-1.36-.23-.12-.49-.07-.65.1l-.87 1.07c-.17.21-.46.26-.71.13-1.47-.78-2.64-1.95-3.41-3.42-.12-.24-.07-.53.14-.7l1.08-.88c.17-.16.22-.42.1-.65 0 0-.55-1.34-1.36-1.61-.31-.1-.65.01-.81.28l-.66 1.1c-.24.4-.3 1.03-.02 1.57.86 1.7 2.1 3.2 3.65 4.3 1.25.88 2.62 1.48 3.94 1.54.54.03 1.16-.03 1.56-.27l1.1-.67c.27-.16.38-.5.28-.8z"/></svg>
         </a>
     </div>
 
-    <!-- STATIC-AI CHATBOX PANEL (OZZASKIN THEMED) -->
-    <div id="ai-chat-box" class="ai-chat-box">
-        <div class="ai-header">
-            <span style="display: flex; align-items: center; gap: 8px;">
-                <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse shadow-[0_0_5px_#4ADE80]"></span>
-                Konsultan AI Ozzaskin
-            </span>
-            <span id="close-ai" style="cursor: pointer; font-size: 1.4rem; line-height: 1;">&times;</span>
-        </div>
-        <div id="chat-history" class="ai-body">
-            <div style="background: #ffffff; padding: 10px 12px; border: 1px solid #E5E7EB; border-radius: 12px 12px 12px 0; align-self: flex-start; max-width: 85%; color: #1F2937;">
-                Assalamualaikum Bunda 😊 <br><br>Saya asisten virtual Ozzaskin. Ada yang bisa saya bantu tentang masalah flek hitam, info harga promo, atau konsultasi kehamilan?
-            </div>
-        </div>
-        <div class="ai-footer">
-            <input type="text" id="chat-input" class="ai-input" placeholder="Ketik pesan Bunda di sini...">
-            <button id="send-chat" style="background: var(--luxury-purple); color: white; border: none; border-radius: 50%; width: 38px; height: 38px; display: flex; justify-content: center; align-items: center; cursor: pointer; font-weight: bold; font-size: 0.8rem; box-shadow: 0 4px 10px rgba(74, 20, 140, 0.3);">
-                ▶
-            </button>
-        </div>
-    </div>
-
-    <!-- JARVIS CORE JS ENGINE (VSL, Voice, Form, AI) -->
+    <!-- JARVIS CORE JS ENGINE (VSL, Voice, Form, AI Inline) -->
     <script>
         // 1. VERTICAL VSL FACADE 9:16
         function initiateVSLPlayback() {
@@ -533,7 +541,7 @@
             }
         }
 
-        // 3. SECURE OMNI FORM INTERCEPTOR (Web3Forms + Google Sheets + WhatsApp Auto-Redirect)
+        // 3. SECURE OMNI FORM INTERCEPTOR
         document.getElementById('omniForm').addEventListener('submit', async function(event) {
             event.preventDefault();
             const targetedForm = event.target;
@@ -545,27 +553,26 @@
             triggerButton.disabled = true;
             
             try {
-                // A. Tembak ke Web3Forms (Email)
+                // A. Tembak ke Web3Forms
                 await fetch('https://api.web3forms.com/submit', { method: 'POST', body: compiledFormData }); 
                 
-                // B. Tembak ke Google Sheets (Format JSON)
+                // B. Tembak ke Google Sheets
                 const rawJsonData = Object.fromEntries(compiledFormData.entries());
                 const absoluteGoogleSheetAddress = 'https://script.google.com/macros/s/AKfycbxwB6z8BSSP_D86AUPDqDWT-tajBbCdsrgcyhT6LzG_KNDKh4BrLO9mOL_ZKIRPjXoD/exec'; 
                 await fetch(absoluteGoogleSheetAddress, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(rawJsonData) });
                 
-                // C. Susun Pesan WhatsApp & Redirect (Auto)
-                const waNumber = "6281234567890"; // Nomor WA Klien Ozzaskin
+                // C. Susun Pesan WA & Auto-Redirect
+                const waNumber = "6281234567890";
                 const waName = compiledFormData.get('name');
                 const waPhone = compiledFormData.get('whatsapp');
                 const waMessage = compiledFormData.get('message');
                 
-                const waText = `Assalamualaikum Admin Ozzaskin,\n\nSaya baru saja mengisi formulir pendaftaran promo.\n\n*Nama Bunda:* ${waName}\n*No. WA:* ${waPhone}\n*Keluhan:* ${waMessage}\n\nMohon segera dibantu proses pemesanannya ya. Terima kasih.`;
+                const waText = `Assalamualaikum Admin Ozzaskin,\n\nSaya baru saja mengisi formulir pendaftaran promo.\n\n*Nama Bunda:* ${waName}\n*No. WA:* ${waPhone}\n*Pesanan/Alamat:* ${waMessage}\n\nMohon segera dibantu proses pemesanannya ya. Terima kasih.`;
                 const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(waText)}`;
                 
                 feedbackStatusLabel.style.display = "block"; 
                 targetedForm.reset();
                 
-                // Buka WhatsApp di tab baru
                 window.open(waLink, '_blank');
 
             } catch (e) {
@@ -575,26 +582,16 @@
                 feedbackStatusLabel.classList.replace('border-emerald-200', 'border-red-200');
                 feedbackStatusLabel.style.display = "block";
             } finally {
-                triggerButton.innerText = "KIRIM DATA & KLAIM PROMO"; 
+                triggerButton.innerText = "KIRIM PESANAN SEKARANG"; 
                 triggerButton.disabled = false;
             }
         });
 
-        // 4. THE SUPER BRAIN STATIC-AI (OZZASKIN ARRAY RANDOMIZER LOGIC)
-        const chatTriggerButton = document.getElementById('ai-button');
-        const interfaceChatBox = document.getElementById('ai-chat-box');
-        const panelCloseTrigger = document.getElementById('close-ai');
-        
-        chatTriggerButton.addEventListener('click', () => { 
-            interfaceChatBox.style.display = interfaceChatBox.style.display === 'none' ? 'flex' : 'none'; 
-        });
-        panelCloseTrigger.addEventListener('click', () => interfaceChatBox.style.display = 'none');
+        // 4. INLINE STATIC-AI (OZZASKIN ARRAY RANDOMIZER)
+        const inlineInputTextField = document.getElementById('inlineChatInput');
+        const inlineChatContainer = document.getElementById('inlineChatStream');
+        const inlineTypingIndicator = document.getElementById('inlineTypingIndicator');
 
-        const inputTextField = document.getElementById('chat-input');
-        const processingSubmitButton = document.getElementById('send-chat');
-        const historicalChatContainer = document.getElementById('chat-history');
-
-        // Database Respon AI menggunakan Array agar jawaban variatif
         const aiDatabase = {
             flek: [
                 "Banyak Bunda yang mengeluhkan hal serupa. Insya Allah flek membandel perlahan memudar karena kandungan Ozzaskin bekerja menekan produksi melanin dari dalam. Yuk klik WhatsApp hijau di kanan bawah untuk konsultasi dengan admin asli kami!",
@@ -608,7 +605,7 @@
             ],
             harga: [
                 "Wah Bunda sangat beruntung! Kebetulan hari ini kami sedang ada promo paket eksklusif potongan harga langsung dari pusat. Jangan sampai kehabisan kuota diskonnya, klik tombol WA sekarang juga!",
-                "Harga promo paket Ozzaskin saat ini jauh lebih hemat dibanding perawatan klinik, Bunda! Untuk pricelist dan katalog lengkapnya, Bunda cukup menekan tombol logo WhatsApp hijau di sebelah kanan layar.",
+                "Harga promo paket Ozzaskin saat ini jauh lebih hemat dibanding perawatan klinik, Bunda! Untuk pricelist dan katalog lengkapnya, Bunda cukup menekan tombol logo WhatsApp hijau di pojok kanan layar.",
                 "Berinvestasi untuk kulit sehat itu penting Bunda. Harga promo paket kami sangat terjangkau. Silakan isi form di atas atau langsung klik ikon WhatsApp untuk dibantu hitungkan estimasi biayanya."
             ],
             default: [
@@ -618,22 +615,20 @@
             ]
         };
 
-        function evaluateStaticAiInteraction() {
-            const userEnteredText = inputTextField.value.trim().toLowerCase();
+        function processInlineChat() {
+            const userEnteredText = inlineInputTextField.value.trim().toLowerCase();
             if (!userEnteredText) return;
             
             // Render Bubble User
-            historicalChatContainer.innerHTML += `<div style="background: var(--luxury-purple); color: white; padding: 10px 12px; border-radius: 12px 12px 0 12px; align-self: flex-end; max-width: 85%; font-size: 0.85rem;">${inputTextField.value.trim()}</div>`;
-            inputTextField.value = '';
-            historicalChatContainer.scrollTop = historicalChatContainer.scrollHeight;
+            inlineChatContainer.innerHTML += `<div style="background: var(--luxury-purple); color: white; padding: 12px 16px; border-radius: 16px 16px 0 16px; align-self: flex-end; max-width: 85%; font-size: 0.85rem; shadow-md;">${inlineInputTextField.value.trim()}</div>`;
+            inlineInputTextField.value = '';
+            inlineChatContainer.scrollTop = inlineChatContainer.scrollHeight;
             
-            // Render Typing Indicator
-            const runtimeToken = 'loader-' + Date.now();
-            historicalChatContainer.innerHTML += `<div id="${runtimeToken}" style="background: transparent; color: #9CA3AF; padding: 5px 12px; align-self: flex-start; font-style: italic; font-size: 0.8rem;">Konsultan AI sedang mengetik...</div>`;
-            historicalChatContainer.scrollTop = historicalChatContainer.scrollHeight;
+            // Show Typing Indicator
+            inlineTypingIndicator.classList.remove('hidden');
             
             setTimeout(() => {
-                document.getElementById(runtimeToken).remove();
+                inlineTypingIndicator.classList.add('hidden');
                 
                 let selectedCategory = 'default';
                 // Fuzzy Logic Detection
@@ -650,15 +645,10 @@
                 const finalAiResponse = targetedPool[Math.floor(Math.random() * targetedPool.length)];
                 
                 // Render Bubble AI
-                historicalChatContainer.innerHTML += `<div style="background: #ffffff; border: 1px solid #E5E7EB; color: #1F2937; padding: 10px 12px; border-radius: 12px 12px 12px 0; align-self: flex-start; max-width: 85%; font-size: 0.85rem; line-height: 1.5; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">${finalAiResponse}</div>`;
-                historicalChatContainer.scrollTop = historicalChatContainer.scrollHeight;
-            }, 800); // Jedah manusiawi 800ms
+                inlineChatContainer.innerHTML += `<div style="background: #ffffff; border: 1px solid #E5E7EB; color: #1F2937; padding: 12px 16px; border-radius: 16px 16px 16px 0; align-self: flex-start; max-width: 85%; font-size: 0.85rem; line-height: 1.6; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">${finalAiResponse}</div>`;
+                inlineChatContainer.scrollTop = inlineChatContainer.scrollHeight;
+            }, 800);
         }
-
-        processingSubmitButton.addEventListener('click', evaluateStaticAiInteraction);
-        inputTextField.addEventListener('keypress', (eventArgs) => { 
-            if (eventArgs.key === 'Enter') evaluateStaticAiInteraction(); 
-        });
     </script>
 </body>
 </html>
