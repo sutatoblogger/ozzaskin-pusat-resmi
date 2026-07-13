@@ -7,12 +7,12 @@
     <meta name="description" content="Solusi flek membandel aman bumil di Jakarta. Ozzaskin 100% Bebas Hidrokuinon & Merkuri. Halal & BPOM. Konsultasi sekarang!">
     <meta name="keywords" content="Skincare Penghilang Flek Hitam Ampuh, Solusi flek membandel, Cara ampuh atasi wajah kusam, Ozzaskin halal MUI, skincare flek hitam BPOM, krim anti-aging aman busui">
     
-    <!-- PRECONNECT GOOGLE FONTS UNTUK KEMEWAHAN VISUAL -->
+    <!-- PRECONNECT GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- JSON-LD GOD-TIER (LocalBusiness, FAQPage & Article Silo) -->
+    <!-- JSON-LD GOD-TIER SILO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -60,124 +60,168 @@
     </script>
 
     <style>
-        /* CSS CORE - ULTRA LUXURY ZERO BLOAT */
+        /* CSS MOTHERSHIP V10 ARCHITECTURE (ADAPTED TO LUXURY PURPLE) */
         :root {
-            --luxury-purple: #4c1d95;
-            --purple-light: #f3e8ff;
-            --purple-accent: #7c3aed;
-            --text-dark: #0f172a;
+            --bg-main: #fcfcfd; 
+            --bg-surface: #ffffff; 
+            --primary: #4c1d95; 
+            --primary-light: #f3e8ff;
+            --accent-gold: #dcb66f; 
+            --text-dark: #1e293b; 
             --text-muted: #475569;
-            --white: #ffffff;
-            --gold: #dcb66f;
-            --font-serif: 'Playfair Display', serif;
+            --font-serif: 'Playfair Display', Georgia, serif; 
             --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --border-soft: #e2e8f0;
         }
-        
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: var(--font-sans); background-color: #f8fafc; color: var(--text-dark); line-height: 1.7; overflow-x: hidden; }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { background-color: var(--bg-main); color: var(--text-muted); font-family: var(--font-sans); line-height: 1.8; overflow-x: hidden; }
         
         /* Proteksi Mobile Anti-Tertutup Tombol Floating */
-        @media (max-width: 768px) { body { padding-bottom: 130px !important; } }
+        @media (max-width: 768px) { body { padding-bottom: 140px !important; } }
         
-        .container { max-width: 750px; margin: 0 auto; padding: 30px 25px; background: var(--white); box-shadow: 0 10px 40px rgba(0,0,0,0.03); }
+        /* TYPOGRAPHY MEWAH */
+        h1, h2, h3 { font-family: var(--font-serif); color: var(--primary); line-height: 1.3; font-weight: 700; }
+        h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); text-align: center; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
+        h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin-bottom: 1rem; }
+        h3 { font-size: 1.25rem; font-family: var(--font-sans); font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem; }
         
-        /* Typography Modern & Mewah */
-        h1, h2, h3 { font-family: var(--font-serif); color: var(--luxury-purple); line-height: 1.3; font-weight: 700; }
-        h1 { font-size: clamp(2rem, 5vw, 2.8rem); text-align: center; margin-bottom: 15px; letter-spacing: -0.5px; }
-        h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin-top: 40px; margin-bottom: 20px; border-bottom: 2px solid var(--purple-light); padding-bottom: 10px; }
-        h3 { font-size: 1.3rem; margin-top: 25px; margin-bottom: 12px; }
+        p { margin-bottom: 1.2rem; font-size: 1.05rem; font-weight: 400; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
         
-        p { margin-bottom: 18px; font-size: 1.05rem; color: var(--text-muted); }
-        strong { color: var(--text-dark); }
-        img { max-width: 100%; height: auto; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        section { padding: 4rem 5%; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .text-center { text-align: center; }
         
-        /* Tombol CTA Urgent */
-        .btn-cta { display: block; width: 100%; text-align: center; background: linear-gradient(135deg, #25D366, #128C7E); color: white; padding: 16px; text-decoration: none; font-size: 1.15rem; font-weight: 700; border-radius: 50px; margin: 30px 0; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3); transition: transform 0.3s; }
-        .btn-cta:hover { transform: translateY(-3px); }
+        .section-badge { display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 1rem; color: var(--accent-gold); font-weight: 700; text-align: center; }
         
-        /* VSL Facade - Fix Blank Screen */
-        .jarvis-video-facade { position: relative; cursor: pointer; border-radius: 16px; overflow: hidden; box-shadow: 0 15px 35px rgba(76, 29, 149, 0.15); margin: 30px 0; background: #000; aspect-ratio: 16/9; }
-        .jarvis-video-facade img { margin: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.85; transition: 0.4s; }
+        /* BUTTONS */
+        .btn-cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 1.2rem 2.5rem; border-radius: 50px; background: linear-gradient(135deg, var(--primary), #6d28d9); color: white; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; cursor: pointer; transition: 0.3s; box-shadow: 0 10px 25px rgba(76, 29, 149, 0.3); border: none; width: 100%; }
+        .btn-cta:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(76, 29, 149, 0.4); }
+
+        /* VSL FACADE FIX: VERTIKAL 9:16 */
+        .jarvis-video-facade { position: relative; cursor: pointer; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(76, 29, 149, 0.15); margin: 2rem auto; background: #000; aspect-ratio: 9/16; max-width: 420px; width: 100%; border: 4px solid var(--bg-surface); }
+        .jarvis-video-facade img { width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: 0.5s; }
         .jarvis-video-facade:hover img { opacity: 1; transform: scale(1.02); }
-        .play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 75px; height: 75px; background: rgba(76, 29, 149, 0.9); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; padding-left: 6px; box-shadow: 0 0 0 10px rgba(255,255,255,0.2); backdrop-filter: blur(5px); }
+        .play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80px; height: 80px; background: rgba(255, 255, 255, 0.9); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; padding-left: 6px; box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.3); backdrop-filter: blur(5px); }
+
+        /* BENTO GRID ARCHITECTURE DARI V10 */
+        .bento-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+        .bento-item { background: var(--bg-surface); border: 1px solid var(--border-soft); border-radius: 16px; overflow: hidden; transition: 0.4s; display: flex; flex-direction: column; justify-content: flex-start; box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
+        .bento-item:hover { border-color: rgba(76, 29, 149, 0.3); transform: translateY(-5px); box-shadow: 0 15px 35px rgba(76, 29, 149, 0.08); }
+        .bento-img { width: 100%; height: 280px; object-fit: cover; transition: 0.5s; }
+        .bento-content { padding: 2rem; flex-grow: 1; }
+        .col-span-6 { grid-column: span 6; }
+        .col-span-12 { grid-column: span 12; }
+
+        /* AUDIBLE FAQ SECTION (V10 STYLE) */
+        .grid-2-faq { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 2.5rem; }
+        .faq-item { background: var(--bg-surface); padding: 1.5rem; border: 1px solid var(--border-soft); border-radius: 16px; display: flex; gap: 1.2rem; align-items: flex-start; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.02); }
+        .faq-item:hover { border-color: var(--primary-light); }
+        .voice-btn { flex-shrink: 0; background: var(--primary-light); border: none; border-radius: 50%; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: 0.3s; }
+        .voice-btn svg { fill: var(--primary); width: 22px; height: 22px; transition: 0.3s; }
+        .voice-btn:hover, .voice-btn.playing { background: var(--primary); }
+        .voice-btn:hover svg, .voice-btn.playing svg { fill: #fff; }
+        .voice-btn.playing { animation: pulse-purple 1.5s infinite; }
+        @keyframes pulse-purple { 0% { box-shadow: 0 0 0 0 rgba(76, 29, 149, 0.4); } 70% { box-shadow: 0 0 0 15px rgba(76, 29, 149, 0); } 100% { box-shadow: 0 0 0 0 rgba(76, 29, 149, 0); } }
+
+        /* OMNI FORM GLASSMORPHISM (V10 STYLE) */
+        .glass-panel-form { background: var(--bg-surface); border: 1px solid var(--border-soft); padding: 3rem; border-radius: 20px; box-shadow: 0 25px 50px -12px rgba(76, 29, 149, 0.1); margin-top: 3rem; position: relative; overflow: hidden; }
+        .glass-panel-form::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: linear-gradient(to right, var(--primary), var(--accent-gold)); }
+        .omni-input { width: 100%; padding: 1.2rem; margin-bottom: 1.2rem; background: var(--bg-main); border: 1px solid var(--border-soft); color: var(--text-dark); border-radius: 12px; font-family: var(--font-sans); font-size: 1rem; transition: 0.3s; }
+        .omni-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 4px var(--primary-light); background: #fff; }
+
+        /* THE BRIDGE SILO */
+        .silo-bridge { background: var(--primary-light); padding: 2rem; border-left: 6px solid var(--primary); border-radius: 0 16px 16px 0; margin-top: 3rem; }
+        .silo-bridge p { color: var(--primary); margin-bottom: 0; font-weight: 500; }
+        .silo-bridge a { color: var(--primary); font-weight: 700; text-decoration: underline; }
         
-        /* FAQ Accordion */
-        .faq-box { border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 12px; overflow: hidden; transition: 0.3s; }
-        .faq-box:hover { border-color: var(--purple-accent); }
-        .faq-q { background: var(--white); padding: 18px; font-weight: 600; cursor: pointer; color: var(--luxury-purple); display: flex; justify-content: space-between; align-items: center; font-family: var(--font-sans); }
-        .faq-a { padding: 0 18px 18px; display: none; background: var(--white); }
-        .btn-voice { background: var(--purple-light); color: var(--luxury-purple); border: none; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; transition: 0.3s; }
-        .btn-voice:hover { background: var(--purple-accent); color: white; }
-        
-        /* Silo Bridge & Tags */
-        .silo-bridge { background: var(--purple-light); padding: 25px; border-left: 5px solid var(--luxury-purple); margin-top: 40px; border-radius: 0 12px 12px 0; }
-        .silo-bridge p { color: var(--luxury-purple); margin-bottom: 0; }
-        .silo-bridge a { color: var(--purple-accent); font-weight: 700; text-decoration: underline; }
-        .lsi-tags { font-size: 0.8rem; color: #64748b; margin-top: 40px; padding-top: 20px; border-top: 1px dashed #cbd5e1; }
-        
-        /* Agency Credit Footer */
-        footer { margin-top: 20px; padding: 25px; text-align: center; background: #f1f5f9; border-radius: 0 0 16px 16px; border-top: 1px solid #e2e8f0; }
-        
-        /* OMNI FORM STYLE DARI SCRIPT REFERENSI */
-        .glass-panel-form { background: #fafafa; border: 1px solid #e2e8f0; padding: 30px; border-radius: 16px; margin: 40px 0; box-shadow: 0 10px 25px rgba(0,0,0,0.02); }
-        .omni-input { width: 100%; padding: 14px; margin-bottom: 15px; border: 1px solid #cbd5e1; border-radius: 8px; font-family: var(--font-sans); font-size: 1rem; transition: 0.3s; background: white; }
-        .omni-input:focus { outline: none; border-color: var(--luxury-purple); box-shadow: 0 0 0 3px var(--purple-light); }
-        
-        /* DUAL-TRAP CTA LAYER (STATIC AI & WHATSAPP) - Persis seperti Source 1 */
-        .trap-container { position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 15px; z-index: 9999; }
-        .cta-btn { width: 65px; height: 65px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: transform 0.3s; box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+        .lsi-tags { font-size: 0.85rem; color: #94a3b8; margin-top: 3rem; padding-top: 2rem; border-top: 1px dashed var(--border-soft); text-align: center; }
+
+        /* FOOTER */
+        footer { padding: 3rem 5%; background: var(--bg-surface); border-top: 1px solid var(--border-soft); text-align: center; }
+        .agency-credit-l1 { color: #475569; font-size: 0.95rem; margin-bottom: 0.3rem; font-weight: 600; }
+        .agency-credit-l2 { color: #94a3b8; font-size: 0.85rem; }
+        .agency-link { color: inherit; transition: 0.3s; }
+        .agency-link:hover { color: var(--primary); font-weight: bold; }
+
+        /* DUAL-TRAP CTA LAYER (STATIC AI & WHATSAPP) - DARI V10 */
+        .trap-container { position: fixed; bottom: 30px; right: 25px; display: flex; flex-direction: column; gap: 15px; z-index: 9999; }
+        .cta-btn { width: 65px; height: 65px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: transform 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
         .cta-wa { background: #25D366; }
         .cta-wa:hover { transform: scale(1.1); }
         .cta-wa svg { fill: #fff; width: 35px; height: 35px; }
-        .cta-ai { background: var(--white); border: 2px solid var(--luxury-purple); animation: pulse-purple 2s infinite; }
+        .cta-ai { background: var(--bg-surface); border: 2px solid var(--primary); animation: pulse-purple 2s infinite; }
         .cta-ai img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; transform: scale(1.05); }
-        @keyframes pulse-purple { 0% { box-shadow: 0 0 0 0 rgba(76, 29, 149, 0.4); } 70% { box-shadow: 0 0 0 15px rgba(76, 29, 149, 0); } 100% { box-shadow: 0 0 0 0 rgba(76, 29, 149, 0); } }
 
-        /* AI CHAT BOX FLOATING (BISA DI-MINIMIZE) */
-        #ai-chat-box { display: none; position: fixed; bottom: 100px; right: 25px; width: 340px; background: var(--white); border: 1px solid var(--purple-light); border-radius: 16px; z-index: 9998; flex-direction: column; box-shadow: 0 15px 40px rgba(0,0,0,0.15); overflow: hidden; transform-origin: bottom right; animation: popUp 0.3s ease-out; }
+        /* AI CHAT BOX FLOATING */
+        #ai-chat-box { display: none; position: fixed; bottom: 105px; right: 25px; width: 350px; background: var(--bg-surface); border: 1px solid var(--border-soft); border-radius: 16px; z-index: 9998; flex-direction: column; box-shadow: 0 20px 50px rgba(0,0,0,0.15); overflow: hidden; transform-origin: bottom right; animation: popUp 0.3s ease-out; }
         @keyframes popUp { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
-        
-        .ai-header { background: linear-gradient(135deg, var(--luxury-purple), var(--purple-accent)); color: white; padding: 15px 18px; font-weight: 700; display: flex; justify-content: space-between; align-items: center; }
-        .ai-body { height: 300px; padding: 18px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; background: #fcfcfc; scroll-behavior: smooth; }
-        .msg { padding: 12px 15px; border-radius: 12px; font-size: 0.95rem; max-width: 85%; line-height: 1.5; }
-        .msg-ai { background: var(--purple-light); color: var(--luxury-purple); align-self: flex-start; border-bottom-left-radius: 0; }
-        .msg-user { background: var(--luxury-purple); color: white; align-self: flex-end; border-bottom-right-radius: 0; }
-        .ai-input-area { padding: 12px; border-top: 1px solid #e2e8f0; display: flex; gap: 10px; background: white; }
-        .ai-input-area input { flex-grow: 1; padding: 10px 15px; border-radius: 20px; border: 1px solid #cbd5e1; outline: none; font-size: 0.9rem; }
-        .ai-input-area button { background: var(--luxury-purple); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; cursor: pointer; font-weight: bold; }
-        .typing { font-size: 0.8rem; color: #94a3b8; padding-left: 10px; font-style: italic; display: none; }
+        .ai-header { background: linear-gradient(135deg, var(--primary), #6d28d9); color: white; padding: 15px 20px; font-weight: 700; display: flex; justify-content: space-between; align-items: center; }
+        .ai-body { height: 320px; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; background: var(--bg-main); scroll-behavior: smooth; }
+        .msg { padding: 12px 16px; border-radius: 14px; font-size: 0.95rem; max-width: 85%; line-height: 1.5; }
+        .msg-ai { background: var(--primary-light); color: var(--primary); align-self: flex-start; border-bottom-left-radius: 0; }
+        .msg-user { background: var(--primary); color: white; align-self: flex-end; border-bottom-right-radius: 0; }
+        .ai-input-area { padding: 15px; border-top: 1px solid var(--border-soft); display: flex; gap: 10px; background: white; }
+        .ai-input-area input { flex-grow: 1; padding: 12px 18px; border-radius: 30px; border: 1px solid var(--border-soft); outline: none; font-size: 0.95rem; background: var(--bg-main); }
+        .ai-input-area input:focus { border-color: var(--primary); }
+        .ai-input-area button { background: var(--primary); color: white; border: none; border-radius: 50%; width: 45px; height: 45px; display: flex; justify-content: center; align-items: center; cursor: pointer; font-weight: bold; }
+        .typing { font-size: 0.85rem; color: #94a3b8; padding-left: 10px; font-style: italic; display: none; }
+
+        @media (max-width: 768px) {
+            section { padding: 3rem 1.2rem; }
+            .col-span-6 { grid-column: span 12; }
+            .glass-panel-form { padding: 2rem 1.5rem; }
+            .bento-img { height: 220px; }
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <p style="text-align: center; font-weight: 700; color: var(--gold); letter-spacing: 2px; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 5px;">Official Brand Ustazah Oki Setiana Dewi</p>
+<section class="container" style="padding-top: 3rem; padding-bottom: 0;">
+    <span class="section-badge">Official Brand Ustazah Oki Setiana Dewi</span>
     <h1>Skincare Penghilang Flek Hitam Ampuh</h1>
+    <p class="text-center" style="max-width: 700px; margin: 0 auto; color: var(--text-dark);">Diformulasikan eksklusif 100% bebas Hidrokuinon & Merkuri. Pilihan utama wanita cerdas untuk memudarkan flek membandel dengan aman dan Halal.</p>
     
-    <!-- FITUR 3: VIDEO FACADE (SOLUSI BLANK SCREEN: playsinline & delay load) -->
+    <!-- FITUR 3: VIDEO FACADE (VERTIKAL 9:16 FIX) -->
     <div class="jarvis-video-facade" onclick="loadVSL(this)">
         <img src="image/video-testimoni-ustazah-oki-ozzaskin.webp" alt="Tonton Rahasia Hilangkan Flek Dr Oki">
         <div class="play-btn">&#9658;</div>
     </div>
+</section>
 
-    <h2>Solusi Flek Membandel Aman Bumil di Jakarta Pusat</h2>
-    <p>Jangan tunggu sampai mesin regenerasi kulit Anda rusak di tengah tingginya polusi Jakarta. Flek hitam membandel dan wajah kusam kini bisa diatasi dengan aman dan elegan.</p>
-    <p>Ozzaskin hadir sebagai mahakarya perawatan premium. Diformulasikan khusus tanpa Hidrokuinon dan Merkuri, menjadikannya sangat aman untuk rutinitas ibu hamil dan menyusui.</p>
+<!-- BENTO GRID SECTION (V10 STYLE) -->
+<section class="container" style="padding-top: 1rem;">
+    <div class="text-center">
+        <span class="section-badge">SOLUSI PREMIUM</span>
+        <h2>Perawatan Intensif Kulit Wajah</h2>
+    </div>
+    
+    <div class="bento-grid">
+        <div class="bento-item col-span-6">
+            <img src="image/skincare-penghilang-flek-hitam-ampuh-ozzaskin.webp" alt="Skincare penghilang flek hitam ampuh Jakarta Barat" class="bento-img">
+            <div class="bento-content">
+                <h3>Aman Bumil di Jakarta Pusat</h3>
+                <p>Jangan tunggu sampai mesin regenerasi kulit Anda rusak di tengah tingginya polusi Jakarta. Flek hitam membandel dan wajah kusam kini bisa diatasi dengan aman dan elegan.</p>
+            </div>
+        </div>
+        
+        <div class="bento-item col-span-6">
+            <img src="image/krim-mata-panda-halal-ozzaskin-original.webp" alt="Krim flek hitam Ozzaskin Ustazah Oki Jakarta Timur" class="bento-img">
+            <div class="bento-content">
+                <h3>Cara Ampuh Atasi Wajah Kusam</h3>
+                <p>Ozzaskin bekerja cerdas dari dalam untuk memudarkan noda hitam, menutrisi mendalam, sekaligus mengunci kelembapan sebagai tameng anti-aging pelindung sinar UV.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <img src="image/skincare-penghilang-flek-hitam-ampuh-ozzaskin.webp" alt="Skincare penghilang flek hitam ampuh Jakarta Barat">
-
-    <h3>Cara Ampuh Atasi Wajah Kusam di Jakarta Selatan</h3>
-    <p>Cuaca ekstrim dan paparan sinar UV mempercepat penuaan dini. Ozzaskin bekerja cerdas dari dalam untuk memudarkan noda hitam, menutrisi mendalam, sekaligus mengunci kelembapan sebagai tameng anti-aging.</p>
-    <p>Jangan tunggu promo habis. Ribuan wanita di Jakarta Timur dan Utara telah membuktikan khasiat krim eksklusif ini. Wajah kembali cerah, sehat, dan berseri hari ini juga.</p>
-
-    <img src="image/krim-mata-panda-halal-ozzaskin-original.webp" alt="Krim flek hitam Ozzaskin Ustazah Oki Jakarta Timur">
-
-    <a href="https://wa.me/62811830330" class="btn-cta" target="_blank">Amankan Promo Ozzaskin via WhatsApp</a>
-
-    <!-- FORM OMNI (WEB3FORMS + SHEETS + WA) ADAPTASI DARI SCRIPT REFERENSI -->
-    <div class="glass-panel-form" id="form-order">
-        <h2 style="font-size: 1.5rem; margin-top: 0; text-align: center;">Formulir Pemesanan Cepat</h2>
-        <p style="text-align: center; font-size: 0.9rem; margin-bottom: 25px;">Lengkapi data di bawah ini, pesanan Bunda akan otomatis masuk ke sistem WhatsApp kami[cite: 1].</p>
+<!-- FORM OMNI (WEB3FORMS + SHEETS + WA) -->
+<section id="kontak" class="container" style="padding-top: 0;">
+    <div class="glass-panel-form">
+        <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem; text-align: center;">Formulir Pemesanan Eksklusif</h2>
+        <p style="text-align: center; font-size: 0.95rem; margin-bottom: 2rem;">Lengkapi data di bawah ini, pesanan Bunda akan otomatis masuk ke sistem prioritas WhatsApp kami.</p>
         
         <form id="omniForm">
             <!-- Akses Web3Forms -->
@@ -187,60 +231,73 @@
             
             <input type="text" name="name" class="omni-input" placeholder="Nama Lengkap Bunda" required>
             <input type="text" name="whatsapp" class="omni-input" placeholder="Nomor WhatsApp (Contoh: 0812...)" required>
-            <textarea name="message" class="omni-input" placeholder="Alamat lengkap pengiriman & detail pesanan..." required style="min-height: 90px; resize: vertical;"></textarea>
+            <textarea name="message" class="omni-input" placeholder="Alamat lengkap pengiriman & detail paket pesanan..." required style="min-height: 110px; resize: vertical;"></textarea>
             
-            <button type="submit" class="btn-cta" style="margin: 10px 0; border: none; font-family: var(--font-sans); cursor: pointer;">KIRIM PESANAN SEKARANG</button>
-            <p id="formStatus" style="margin-top: 15px; font-size: 0.9rem; color: #25D366; display: none; text-align: center; font-weight: 600;">✅ Pesanan berhasil dikirim. Mengalihkan ke WhatsApp...</p>
+            <button type="submit" class="btn-cta">KIRIM PESANAN SEKARANG</button>
+            <p id="formStatus" style="margin-top: 1rem; font-size: 0.95rem; color: #16a34a; display: none; text-align: center; font-weight: 700;">✅ Pesanan berhasil dikirim. Mengalihkan ke WhatsApp otomatis...</p>
         </form>
     </div>
+</section>
 
-    <h2>Tanya Jawab Seputar Ozzaskin (Voice FAQ)</h2>
+<!-- AUDIBLE FAQ SECTION (V10 STYLE) -->
+<section class="container" style="padding-top: 0;">
+    <div class="text-center">
+        <span class="section-badge">AUDIBLE INFO CENTER</span>
+        <h2>Tanya Jawab Seputar Ozzaskin</h2>
+    </div>
     
-    <!-- FITUR 1: VOICE FAQ (AEO) -->
-    <div id="faq-container">
-        <div class="faq-box">
-            <div class="faq-q" onclick="toggleFaq(this)">Apakah Ozzaskin aman untuk Ibu Hamil dan Menyusui? <span>+</span></div>
-            <div class="faq-a">
-                <p style="margin-top: 10px;">Sangat aman, Bunda. Ozzaskin diformulasikan seratus persen bebas Merkuri dan Hidrokuinon, serta telah teruji Hypoallergenic sehingga bersahabat untuk ibu hamil dan menyusui.</p>
-                <button class="btn-voice" onclick="speakFAQ('Sangat aman, Bunda. Ozzaskin diformulasikan seratus persen bebas Merkuri dan Hidrokuinon, serta telah teruji Hypoallergenic sehingga bersahabat untuk ibu hamil dan menyusui.')">🔊 Dengarkan Jawaban</button>
+    <div class="grid-2-faq">
+        <div class="faq-item">
+            <button class="voice-btn" onclick="speakFAQ('Sangat aman, Bunda. Ozzaskin diformulasikan seratus persen bebas Merkuri dan Hidrokuinon, serta telah teruji Hypoallergenic sehingga bersahabat untuk ibu hamil dan menyusui.', this)" aria-label="Putar Jawaban">
+                <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+            </button>
+            <div>
+                <h3>Apakah Ozzaskin aman untuk Ibu Hamil dan Menyusui?</h3>
+                <p style="font-size: 0.95rem; margin-bottom: 0;">Sangat aman, Bunda. Ozzaskin diformulasikan seratus persen bebas Merkuri dan Hidrokuinon, serta telah teruji Hypoallergenic.</p>
             </div>
         </div>
         
-        <div class="faq-box">
-            <div class="faq-q" onclick="toggleFaq(this)">Apakah produk ini sudah terdaftar resmi? <span>+</span></div>
-            <div class="faq-a">
-                <p style="margin-top: 10px;">Tentu saja. Ozzaskin sudah mengantongi sertifikasi Halal resmi dari MUI dan terdaftar secara legal di BPOM Indonesia.</p>
-                <button class="btn-voice" onclick="speakFAQ('Tentu saja. Ozzaskin sudah mengantongi sertifikasi Halal resmi dari MUI dan terdaftar secara legal di BPOM Indonesia.')">🔊 Dengarkan Jawaban</button>
+        <div class="faq-item">
+            <button class="voice-btn" onclick="speakFAQ('Tentu saja. Ozzaskin sudah mengantongi sertifikasi Halal resmi dari Majelis Ulama Indonesia dan terdaftar secara legal di BPOM.', this)" aria-label="Putar Jawaban">
+                <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+            </button>
+            <div>
+                <h3>Apakah produk ini sudah terdaftar resmi?</h3>
+                <p style="font-size: 0.95rem; margin-bottom: 0;">Tentu saja. Ozzaskin sudah mengantongi sertifikasi Halal resmi dari MUI dan terdaftar secara legal di BPOM Indonesia.</p>
             </div>
         </div>
 
-        <div class="faq-box">
-            <div class="faq-q" onclick="toggleFaq(this)">Berapa lama flek hitam di wajah bisa memudar? <span>+</span></div>
-            <div class="faq-a">
-                <p style="margin-top: 10px;">Dengan pemakaian rutin pagi dan malam, bahan aktif pencerah dan anti-aging di dalamnya akan bekerja optimal dalam beberapa minggu.</p>
-                <button class="btn-voice" onclick="speakFAQ('Dengan pemakaian rutin pagi dan malam, bahan aktif pencerah dan anti-aging di dalamnya akan bekerja optimal dalam beberapa minggu.')">🔊 Dengarkan Jawaban</button>
+        <div class="faq-item">
+            <button class="voice-btn" onclick="speakFAQ('Dengan pemakaian rutin pagi dan malam, bahan aktif pencerah dan anti-aging di dalamnya akan bekerja optimal dalam beberapa minggu.', this)" aria-label="Putar Jawaban">
+                <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+            </button>
+            <div>
+                <h3>Berapa lama flek hitam di wajah bisa memudar?</h3>
+                <p style="font-size: 0.95rem; margin-bottom: 0;">Dengan pemakaian rutin, bahan aktif pencerah dan anti-aging di dalamnya akan bekerja optimal dalam beberapa minggu.</p>
             </div>
         </div>
     </div>
 
     <!-- THE BRIDGE (SILO KEPADA MOTHERSHIP BARU) -->
     <div class="silo-bridge">
-        <p>Jangan tunggu sampai flek hitam menebal dan membuat wajah terlihat lelah. Konsultasikan perawatan kulit Anda bersama <a href="https://dongkrakusaha.com/" target="_blank">Ozzaskin Official - Skincare Halal Spesialis Flek</a> untuk solusi yang aman, teruji klinis, dan menenangkan hati. Klik tombol pemesanan sekarang untuk mengembalikan cahaya alami wajah Anda hari ini.</p>
+        <p>Jangan tunggu sampai flek hitam menebal dan membuat wajah terlihat lelah. Konsultasikan perawatan kulit Anda bersama <a href="https://dongkrakusaha.com/" target="_blank">Ozzaskin Official - Skincare Halal Spesialis Flek</a> untuk solusi yang aman, teruji klinis, dan menenangkan hati. Kirim pesan sekarang untuk mengembalikan cahaya alami wajah Anda hari ini.</p>
     </div>
 
     <!-- LSI INJECTION (WHITE HAT) -->
     <div class="lsi-tags">
         <strong>Pencarian Terkait (Tags):</strong> Ozzaskin halal MUI, skincare flek hitam BPOM, krim anti-aging aman busui, review Ozzaskin flek membandel, harga Ozzaskin original, perawatan flek membandel bebas hidrokuinon Jakarta Utara.
     </div>
-</div>
+</section>
 
 <!-- AGENCY CREDIT (FOOTER SILUMAN) -->
 <footer>
-    <p style="color: #475569; font-size: 0.9rem; margin-bottom: 5px; font-weight: 500;">© 2026 Ozzaskin Official. All Rights Reserved.</p>
-    <p style="color: #94a3b8; font-size: 0.85rem;">SEO & Web Development by <a href="https://dongkrakusaha.com/" target="_blank" rel="nofollow noopener noreferrer" style="text-decoration: none; color: inherit; transition: 0.3s;" onmouseover="this.style.color='#7c3aed'; this.style.fontWeight='bold';" onmouseout="this.style.color='inherit'; this.style.fontWeight='normal';">CiledugPromo</a></p>
+    <div class="container">
+        <p class="agency-credit-l1">© 2026 Ozzaskin Official. All Rights Reserved.</p>
+        <p class="agency-credit-l2">SEO & Web Development by <a href="https://dongkrakusaha.com/" target="_blank" rel="nofollow noopener noreferrer" class="agency-link">CiledugPromo</a></p>
+    </div>
 </footer>
 
-<!-- DUAL-TRAP CTA LAYER (DIAMBIL DARI STRUKTUR REFERENSI MASTER) -->
+<!-- DUAL-TRAP CTA LAYER (STATIC AI & WHATSAPP) -->
 <div class="trap-container">
     <div class="cta-btn cta-ai" id="ai-trigger" aria-label="Tanya Asisten AI">
         <img src="https://dongkrakusaha.com/gambarbebas/1142920260706-035633_logo%20ai%20tanya%20ai.webp" alt="Ozzaskin AI">
@@ -250,19 +307,19 @@
     </a>
 </div>
 
-<!-- FITUR 2: ASISTEN AI CHAT BOX (BISA DI-MINIMIZE & DITUTUP) -->
+<!-- AI CHAT BOX FLOATING -->
 <div id="ai-chat-box">
     <div class="ai-header">
         <span style="display: flex; align-items: center; gap: 10px;">
-            <img src="https://dongkrakusaha.com/gambarbebas/1142920260706-035633_logo%20ai%20tanya%20ai.webp" style="width: 28px; height: 28px; border-radius: 50%; border: 1px solid white;" alt="Ozzaskin AI">
+            <img src="https://dongkrakusaha.com/gambarbebas/1142920260706-035633_logo%20ai%20tanya%20ai.webp" style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid white;" alt="Ozzaskin AI">
             Asisten Ozzaskin
         </span>
-        <span id="close-ai" style="cursor: pointer; font-size: 1.6rem; line-height: 1;">&times;</span>
+        <span id="close-ai" style="cursor: pointer; font-size: 1.8rem; line-height: 1;">&times;</span>
     </div>
     <div class="ai-body" id="chat-body">
         <div class="msg msg-ai">Assalamualaikum Bunda! Masya Allah, terima kasih sudah mampir. Ada yang bisa kami bantu seputar perawatan kulit bebas flek bersama Ozzaskin?</div>
     </div>
-    <div class="typing" id="typing-indicator">Asisten sedang mengetik...</div>
+    <div class="typing" id="typing-indicator">Asisten sedang menganalisis...</div>
     <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pesan Bunda..." onkeypress="handleChat(event)">
         <button onclick="processAI()">&#10148;</button>
@@ -270,23 +327,40 @@
 </div>
 
 <script>
-    // 1. SOLUSI VIDEO BLANK SCREEN (Injeksi playsinline & atribut HTML5 utuh)
+    // 1. SOLUSI VIDEO BLANK SCREEN & RASIO 9:16
     function loadVSL(element) {
-        element.innerHTML = '<video controls autoplay playsinline style="width:100%; height:100%; object-fit:cover;"><source src="video/Ozzaskin-ustazah-oki.mp4" type="video/mp4">Browser Bunda tidak mendukung pemutaran video.</video>';
+        // Menggunakan playsinline dan format tag video modern
+        element.innerHTML = '<video controls autoplay playsinline style="width:100%; height:100%; object-fit:cover; border-radius: 16px;"><source src="video/Ozzaskin-ustazah-oki.mp4" type="video/mp4">Browser Bunda tidak mendukung pemutaran video.</video>';
         element.style.cursor = 'default';
+        element.style.border = 'none';
     }
 
-    // 2. TOGGLE UI ASISTEN AI (Bisa minimize/hide)
+    // 2. LOGIKA VOICE FAQ (AEO) MOTHERSHIP V10
+    const voiceSynth = window.speechSynthesis;
+    function speakFAQ(text, buttonEl) {
+        document.querySelectorAll('.voice-btn').forEach(btn => btn.classList.remove('playing'));
+        if (voiceSynth.speaking) voiceSynth.cancel();
+        
+        let utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'id-ID';
+        utterance.rate = 0.88;
+        utterance.pitch = 0.82;
+        
+        buttonEl.classList.add('playing');
+        utterance.onend = () => buttonEl.classList.remove('playing');
+        utterance.onerror = () => buttonEl.classList.remove('playing');
+        voiceSynth.speak(utterance);
+    }
+
+    // 3. TOGGLE UI ASISTEN AI
     const btnAi = document.getElementById('ai-trigger');
     const boxAi = document.getElementById('ai-chat-box');
     const closeAi = document.getElementById('close-ai');
     
-    btnAi.addEventListener('click', () => {
-        boxAi.style.display = boxAi.style.display === 'flex' ? 'none' : 'flex';
-    });
+    btnAi.addEventListener('click', () => { boxAi.style.display = boxAi.style.display === 'flex' ? 'none' : 'flex'; });
     closeAi.addEventListener('click', () => { boxAi.style.display = 'none'; });
 
-    // 3. LOGIKA AI RANDOMIZER (Jawaban bervariasi, tidak monoton)
+    // 4. LOGIKA AI RANDOMIZER
     function handleChat(e) { if (e.key === 'Enter') processAI(); }
 
     function processAI() {
@@ -297,17 +371,14 @@
         let chatBody = document.getElementById('chat-body');
         let typing = document.getElementById('typing-indicator');
 
-        // Render User Text
         chatBody.innerHTML += `<div class="msg msg-user">${text}</div>`;
         inputField.value = '';
         chatBody.scrollTop = chatBody.scrollHeight;
         typing.style.display = 'block';
 
-        // Array Bank Jawaban Random
         const respFlek = [
-            "Masya Allah, Bunda tidak perlu khawatir ya. Ozzaskin diformulasikan khusus dengan bahan alami untuk memudarkan flek hitam.",
-            "Insya Allah flek membandel dan wajah kusam bisa teratasi, Bun. Rutin pakai Ozzaskin pagi dan malam ya.",
-            "Tentu Bunda, fokus utama Ozzaskin dari Ustazah Oki memang untuk membasmi flek hitam dari akarnya."
+            "Masya Allah, Bunda tidak perlu khawatir ya. Ozzaskin diformulasikan khusus dengan bahan alami untuk memudarkan flek hitam dari akarnya.",
+            "Insya Allah flek membandel dan wajah kusam bisa teratasi, Bun. Rutin pakai Ozzaskin pagi dan malam ya."
         ];
         const respBumil = [
             "Alhamdulillah, pertanyaan yang bagus Bunda! Ozzaskin 100% bebas Merkuri dan sangat bersahabat untuk bumil & busui.",
@@ -318,13 +389,12 @@
             "Keamanan terjamin, Bun! Sudah lulus uji klinis BPOM dan bersertifikat Halal. Hati tenang pakainya."
         ];
         const respOrder = [
-            "Alhamdulillah, Bunda tertarik! Untuk detail harga promo, silakan klik tombol WhatsApp hijau di layar ya, Bun.",
-            "Mari Bunda amankan slot promonya sebelum kehabisan. Tim admin kami di WhatsApp siap melayani Bunda sekarang."
+            "Alhamdulillah, Bunda tertarik! Untuk pemesanan otomatis, silakan isi form pemesanan di atas atau klik tautan WhatsApp di bawah ini ya.",
+            "Mari Bunda amankan slot promonya sebelum kehabisan. Tim admin kami siap memproses pesanan Bunda sekarang."
         ];
         const respDefault = [
-            "Baik Bunda, ada hal spesifik lain seputar kulit wajah yang ingin didiskusikan?",
-            "Masya Allah. Silakan Bunda tanyakan keluhan kulitnya, atau langsung tap tombol WhatsApp untuk konsultasi eksklusif ya.",
-            "Informasi yang menarik Bunda. Untuk penanganan lebih lanjut, asisten utama kami di WhatsApp siap memandu Bunda ya."
+            "Baik Bunda, ada hal spesifik lain seputar perawatan wajah yang ingin didiskusikan?",
+            "Masya Allah. Silakan Bunda tanyakan keluhan kulitnya, atau langsung klik tautan WhatsApp di bawah untuk konsultasi eksklusif ya."
         ];
 
         function getRandom(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
@@ -332,7 +402,7 @@
         setTimeout(() => {
             typing.style.display = 'none';
             let reply = "";
-            let waLink = "<br><br><a href='https://wa.me/62811830330' target='_blank' style='color:var(--purple-accent); font-weight:bold; text-decoration:underline;'>Tanya Langsung via WhatsApp</a>";
+            let waLink = "<br><br><a href='https://wa.me/62811830330' target='_blank' style='color:var(--primary); font-weight:700; text-decoration:underline;'>Buka Chat WhatsApp Admin</a>";
 
             if (text.match(/(flek|kusam|hitam|noda)/i)) reply = getRandom(respFlek);
             else if (text.match(/(bumil|busui|hamil|menyusui)/i)) reply = getRandom(respBumil);
@@ -342,31 +412,10 @@
 
             chatBody.innerHTML += `<div class="msg msg-ai">${reply} ${waLink}</div>`;
             chatBody.scrollTop = chatBody.scrollHeight;
-        }, 1200); // 1.2s delay agar terkesan lebih natural sedang mengetik
+        }, 1200);
     }
 
-    // 4. LOGIKA VOICE FAQ (AEO)
-    function toggleFaq(el) {
-        let answer = el.nextElementSibling;
-        let sign = el.querySelector('span');
-        if (answer.style.display === "block") {
-            answer.style.display = "none";
-            sign.innerHTML = "+";
-        } else {
-            answer.style.display = "block";
-            sign.innerHTML = "-";
-        }
-    }
-    function speakFAQ(text) {
-        window.speechSynthesis.cancel();
-        let utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = 'id-ID';
-        utterance.rate = 0.88;
-        utterance.pitch = 0.82;
-        window.speechSynthesis.speak(utterance);
-    }
-
-    // 5. INTERCEPTOR OMNI FORM (WEB3FORMS + GOOGLE SHEETS + WA) - MENDUPLIKASI FITUR SCRIPT REFERENSI[cite: 1]
+    // 5. INTERCEPTOR OMNI FORM (WEB3FORMS + GOOGLE SHEETS + WA)
     document.getElementById('omniForm').addEventListener('submit', async function(event) {
         event.preventDefault();
         const formEl = event.target;
@@ -378,27 +427,22 @@
         btnSubmit.disabled = true;
         
         try {
-            // A. Tembak ke Web3Forms[cite: 1]
             await fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData }); 
             
-            // B. Tembak ke Google Sheets[cite: 1]
             const rawData = Object.fromEntries(formData.entries());
             const sheetUrl = 'https://script.google.com/macros/s/AKfycbxwB6z8BSSP_D86AUPDqDWT-tajBbCdsrgcyhT6LzG_KNDKh4BrLO9mOL_ZKIRPjXoD/exec'; 
             await fetch(sheetUrl, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(rawData) });
             
-            // C. Susun Format Pesan WhatsApp Ozzaskin & Redirect[cite: 1]
             const waNum = "62811830330"; 
             const name = formData.get('name');
             const phone = formData.get('whatsapp');
             const msg = formData.get('message');
             
-            const waText = `Assalamualaikum Admin Ozzaskin.\nSaya baru saja mengisi form pemesanan promo.\n\n*Nama:* ${name}\n*WA:* ${phone}\n*Detail:* ${msg}\n\nMohon segera diproses ya.`;
+            const waText = `Assalamualaikum Admin Ozzaskin.\nSaya baru saja mengisi form pemesanan promo VIP.\n\n*Nama:* ${name}\n*WA:* ${phone}\n*Detail:* ${msg}\n\nMohon segera diproses ya.`;
             const finalWaLink = `https://wa.me/${waNum}?text=${encodeURIComponent(waText)}`;
             
             statusEl.style.display = "block"; 
             formEl.reset();
-            
-            // Eksekusi Autopilot Buka Tab WhatsApp[cite: 1]
             window.open(finalWaLink, '_blank');
 
         } catch (e) {
