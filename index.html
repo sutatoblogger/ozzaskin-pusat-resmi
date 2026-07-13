@@ -12,55 +12,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- JSON-LD GOD-TIER SILO -->
+    <!-- JSON-LD GOD-TIER SILO & AEO PROTECTION -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "LocalBusiness",
+          "@type": ["LocalBusiness", "WebPage"],
+          "@id": "https://ozzaskin-pusat-resmi.vercel.app/#business",
           "name": "Ozzaskin Official",
-          "image": "https://dongkrakusaha.com/gambarbebas/1142920260706-035633_logo ai tanya ai.webp",
-          "@id": "https://ozzaskin-pusat-resmi.vercel.app/",
-          "url": "https://ozzaskin-pusat-resmi.vercel.app/",
+          "alternateName": "Skincare Penghilang Flek Hitam Ampuh",
+          "description": "Skincare premium Ozzaskin dari Ustazah Oki Setiana Dewi. 100% bebas hidrokuinon, halal, dan aman untuk memudarkan flek hitam membandel bagi bumil dan busui di area Jakarta.",
           "telephone": "+62811830330",
-          "priceRange": "$$",
+          "url": "https://ozzaskin-pusat-resmi.vercel.app/",
+          "image": "https://dongkrakusaha.com/gambarbebas/1142920260706-035633_logo ai tanya ai.webp",
+          "sameAs": [
+            "https://www.instagram.com/ozzaskin_official",
+            "https://www.tiktok.com/@ozzaskinofficial",
+            "https://dongkrakusaha.com",
+            "https://ciledugpromo.biz.id"
+          ],
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "DKI Jakarta",
             "addressLocality": "Jakarta Pusat",
             "addressRegion": "DKI Jakarta",
             "addressCountry": "ID"
           },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": -6.2088,
-            "longitude": 106.8456
-          }
+          "priceRange": "$$",
+          "relatedLink": [
+            "https://dongkrakusaha.com/solusi-flek-hitam-jakarta-pusat",
+            "https://dongkrakusaha.com/skincare-aman-bumil-jakarta-selatan",
+            "https://dongkrakusaha.com/krim-halal-ustazah-oki-jakarta-barat",
+            "https://dongkrakusaha.com/cara-hilangkan-flek-jakarta-timur",
+            "https://dongkrakusaha.com/skincare-bebas-merkuri-jakarta-utara",
+            "https://dongkrakusaha.com/review-ozzaskin-flek-membandel",
+            "https://dongkrakusaha.com/harga-promo-ozzaskin-original"
+          ]
         },
         {
-          "@type": "Article",
-          "headline": "Skincare Penghilang Flek Hitam Ampuh",
-          "author": {
-            "@type": "Organization",
-            "name": "Ozzaskin Official"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "DongkrakUsaha",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://dongkrakusaha.com/logo.webp"
-            }
-          },
-          "relatedLink": "https://dongkrakusaha.com/artikel-silo-ozzaskin"
+          "@type": "FAQPage",
+          "@id": "https://ozzaskin-pusat-resmi.vercel.app/#faq",
+          "mainEntity": [
+            { "@type": "Question", "name": "Apakah Ozzaskin aman untuk Ibu Hamil dan Menyusui?", "acceptedAnswer": { "@type": "Answer", "text": "Sangat aman. Ozzaskin 100% bebas Merkuri dan Hidrokuinon. Formula hypoallergenic-nya teruji klinis menjaga kulit bumil dan busui tetap sehat tanpa efek samping." } },
+            { "@type": "Question", "name": "Apakah produk Ozzaskin sudah terdaftar resmi?", "acceptedAnswer": { "@type": "Answer", "text": "Ya, Ozzaskin memiliki sertifikasi Halal MUI dan izin edar resmi BPOM. Keamanan bahan baku diawasi langsung di bawah standar klinis ketat." } },
+            { "@type": "Question", "name": "Berapa lama flek hitam di wajah memudar dengan Ozzaskin?", "acceptedAnswer": { "@type": "Answer", "text": "Hasil optimal terlihat dalam beberapa minggu pemakaian rutin pagi dan malam. Formula aktifnya memecah pigmentasi gelap sekaligus mencegah penuaan dini." } },
+            { "@type": "Question", "name": "Apakah Ozzaskin cocok untuk kulit sangat sensitif?", "acceptedAnswer": { "@type": "Answer", "text": "Sangat cocok. Ozzaskin didesain khusus menutrisi lapisan kulit terdalam dengan kelembutan maksimal, mencegah iritasi kemerahan pada kulit sensitif." } },
+            { "@type": "Question", "name": "Bagaimana cara pesan Ozzaskin yang 100% asli?", "acceptedAnswer": { "@type": "Answer", "text": "Pemesanan jaminan 100% original hanya melalui admin resmi kami. Silakan klik tombol WhatsApp di halaman ini untuk mendapatkan promo hari ini." } }
+          ]
         }
       ]
     }
     </script>
 
     <style>
-        /* CSS MOTHERSHIP V10 ARCHITECTURE (ADAPTED TO LUXURY PURPLE) */
+        /* CSS MOTHERSHIP V10 ARCHITECTURE */
         :root {
             --bg-main: #fcfcfd; 
             --bg-surface: #ffffff; 
@@ -97,8 +102,10 @@
         .section-badge { display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 1rem; color: var(--accent-gold); font-weight: 700; text-align: center; }
         
         /* BUTTONS */
-        .btn-cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 1.2rem 2.5rem; border-radius: 50px; background: linear-gradient(135deg, var(--primary), #6d28d9); color: white; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; cursor: pointer; transition: 0.3s; box-shadow: 0 10px 25px rgba(76, 29, 149, 0.3); border: none; width: 100%; }
-        .btn-cta:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(76, 29, 149, 0.4); }
+        .btn-cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 1.2rem 2.5rem; border-radius: 50px; background: linear-gradient(135deg, #25D366, #128C7E); color: white; font-size: 1.15rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; cursor: pointer; transition: 0.3s; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3); border: none; width: 100%; text-decoration: none;}
+        .btn-cta:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4); }
+        .btn-cta-purple { background: linear-gradient(135deg, var(--primary), #6d28d9); box-shadow: 0 10px 25px rgba(76, 29, 149, 0.3); }
+        .btn-cta-purple:hover { box-shadow: 0 15px 30px rgba(76, 29, 149, 0.4); }
 
         /* VSL FACADE FIX: VERTIKAL 9:16 */
         .jarvis-video-facade { position: relative; cursor: pointer; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(76, 29, 149, 0.15); margin: 2rem auto; background: #000; aspect-ratio: 9/16; max-width: 420px; width: 100%; border: 4px solid var(--bg-surface); }
@@ -106,7 +113,7 @@
         .jarvis-video-facade:hover img { opacity: 1; transform: scale(1.02); }
         .play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80px; height: 80px; background: rgba(255, 255, 255, 0.9); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; padding-left: 6px; box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.3); backdrop-filter: blur(5px); }
 
-        /* BENTO GRID ARCHITECTURE DARI V10 */
+        /* BENTO GRID ARCHITECTURE */
         .bento-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
         .bento-item { background: var(--bg-surface); border: 1px solid var(--border-soft); border-radius: 16px; overflow: hidden; transition: 0.4s; display: flex; flex-direction: column; justify-content: flex-start; box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
         .bento-item:hover { border-color: rgba(76, 29, 149, 0.3); transform: translateY(-5px); box-shadow: 0 15px 35px rgba(76, 29, 149, 0.08); }
@@ -115,38 +122,26 @@
         .col-span-6 { grid-column: span 6; }
         .col-span-12 { grid-column: span 12; }
 
-        /* AUDIBLE FAQ SECTION (V10 STYLE) */
-        .grid-2-faq { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 2.5rem; }
-        .faq-item { background: var(--bg-surface); padding: 1.5rem; border: 1px solid var(--border-soft); border-radius: 16px; display: flex; gap: 1.2rem; align-items: flex-start; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.02); }
-        .faq-item:hover { border-color: var(--primary-light); }
-        .voice-btn { flex-shrink: 0; background: var(--primary-light); border: none; border-radius: 50%; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: 0.3s; }
-        .voice-btn svg { fill: var(--primary); width: 22px; height: 22px; transition: 0.3s; }
-        .voice-btn:hover, .voice-btn.playing { background: var(--primary); }
-        .voice-btn:hover svg, .voice-btn.playing svg { fill: #fff; }
-        .voice-btn.playing { animation: pulse-purple 1.5s infinite; }
+        /* AUDIBLE FAQ SECTION */
+        .faq-box { background: var(--bg-surface); border: 1px solid var(--border-soft); border-radius: 16px; margin-bottom: 15px; overflow: hidden; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.02); }
+        .faq-box:hover { border-color: var(--primary-light); }
+        .faq-q { padding: 20px; font-weight: 700; cursor: pointer; color: var(--primary); display: flex; justify-content: space-between; align-items: center; font-family: var(--font-sans); }
+        .faq-a { padding: 0 20px 20px; display: none; }
+        .btn-voice { flex-shrink: 0; background: var(--primary-light); color: var(--primary); border: none; padding: 10px 20px; border-radius: 30px; cursor: pointer; transition: 0.3s; font-weight: 700; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 8px;}
+        .btn-voice:hover, .btn-voice.playing { background: var(--primary); color: #fff;}
+        .btn-voice.playing { animation: pulse-purple 1.5s infinite; }
         @keyframes pulse-purple { 0% { box-shadow: 0 0 0 0 rgba(76, 29, 149, 0.4); } 70% { box-shadow: 0 0 0 15px rgba(76, 29, 149, 0); } 100% { box-shadow: 0 0 0 0 rgba(76, 29, 149, 0); } }
 
-        /* OMNI FORM GLASSMORPHISM (V10 STYLE) */
+        /* OMNI FORM GLASSMORPHISM */
         .glass-panel-form { background: var(--bg-surface); border: 1px solid var(--border-soft); padding: 3rem; border-radius: 20px; box-shadow: 0 25px 50px -12px rgba(76, 29, 149, 0.1); margin-top: 3rem; position: relative; overflow: hidden; }
         .glass-panel-form::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: linear-gradient(to right, var(--primary), var(--accent-gold)); }
         .omni-input { width: 100%; padding: 1.2rem; margin-bottom: 1.2rem; background: var(--bg-main); border: 1px solid var(--border-soft); color: var(--text-dark); border-radius: 12px; font-family: var(--font-sans); font-size: 1rem; transition: 0.3s; }
         .omni-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 4px var(--primary-light); background: #fff; }
 
-        /* THE BRIDGE SILO */
-        .silo-bridge { background: var(--primary-light); padding: 2rem; border-left: 6px solid var(--primary); border-radius: 0 16px 16px 0; margin-top: 3rem; }
-        .silo-bridge p { color: var(--primary); margin-bottom: 0; font-weight: 500; }
-        .silo-bridge a { color: var(--primary); font-weight: 700; text-decoration: underline; }
-        
+        /* THE BRIDGE SILO & LSI */
         .lsi-tags { font-size: 0.85rem; color: #94a3b8; margin-top: 3rem; padding-top: 2rem; border-top: 1px dashed var(--border-soft); text-align: center; }
 
-        /* FOOTER */
-        footer { padding: 3rem 5%; background: var(--bg-surface); border-top: 1px solid var(--border-soft); text-align: center; }
-        .agency-credit-l1 { color: #475569; font-size: 0.95rem; margin-bottom: 0.3rem; font-weight: 600; }
-        .agency-credit-l2 { color: #94a3b8; font-size: 0.85rem; }
-        .agency-link { color: inherit; transition: 0.3s; }
-        .agency-link:hover { color: var(--primary); font-weight: bold; }
-
-        /* DUAL-TRAP CTA LAYER (STATIC AI & WHATSAPP) - DARI V10 */
+        /* DUAL-TRAP CTA LAYER (STATIC AI & WHATSAPP) */
         .trap-container { position: fixed; bottom: 30px; right: 25px; display: flex; flex-direction: column; gap: 15px; z-index: 9999; }
         .cta-btn { width: 65px; height: 65px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: transform 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
         .cta-wa { background: #25D366; }
@@ -173,7 +168,6 @@
             section { padding: 3rem 1.2rem; }
             .col-span-6 { grid-column: span 12; }
             .glass-panel-form { padding: 2rem 1.5rem; }
-            .bento-img { height: 220px; }
         }
     </style>
 </head>
@@ -191,7 +185,7 @@
     </div>
 </section>
 
-<!-- BENTO GRID SECTION (V10 STYLE) -->
+<!-- BENTO GRID SECTION -->
 <section class="container" style="padding-top: 1rem;">
     <div class="text-center">
         <span class="section-badge">SOLUSI PREMIUM</span>
@@ -215,6 +209,8 @@
             </div>
         </div>
     </div>
+
+    <a href="https://wa.me/62811830330" target="_blank" class="btn-cta" style="margin-top: 2rem;">Amankan Promo Ozzaskin Sekarang</a>
 </section>
 
 <!-- FORM OMNI (WEB3FORMS + SHEETS + WA) -->
@@ -224,7 +220,7 @@
         <p style="text-align: center; font-size: 0.95rem; margin-bottom: 2rem;">Lengkapi data di bawah ini, pesanan Bunda akan otomatis masuk ke sistem prioritas WhatsApp kami.</p>
         
         <form id="omniForm">
-            <!-- Akses Web3Forms -->
+            <!-- Akses Web3Forms Master -->
             <input type="hidden" name="access_key" value="bea8e485-773b-40a3-88f1-78a1fe496511">
             <input type="hidden" name="subject" value="ORDER BARU: OZZASKIN OFFICIAL">
             <input type="hidden" name="brand_name" value="Ozzaskin">
@@ -233,71 +229,85 @@
             <input type="text" name="whatsapp" class="omni-input" placeholder="Nomor WhatsApp (Contoh: 0812...)" required>
             <textarea name="message" class="omni-input" placeholder="Alamat lengkap pengiriman & detail paket pesanan..." required style="min-height: 110px; resize: vertical;"></textarea>
             
-            <button type="submit" class="btn-cta">KIRIM PESANAN SEKARANG</button>
+            <button type="submit" class="btn-cta btn-cta-purple">KIRIM PESANAN SEKARANG</button>
             <p id="formStatus" style="margin-top: 1rem; font-size: 0.95rem; color: #16a34a; display: none; text-align: center; font-weight: 700;">✅ Pesanan berhasil dikirim. Mengalihkan ke WhatsApp otomatis...</p>
         </form>
     </div>
 </section>
 
-<!-- AUDIBLE FAQ SECTION (V10 STYLE) -->
+<!-- AUDIBLE FAQ SECTION (AEO & GEO ZERO-FLUFF) -->
 <section class="container" style="padding-top: 0;">
     <div class="text-center">
         <span class="section-badge">AUDIBLE INFO CENTER</span>
         <h2>Tanya Jawab Seputar Ozzaskin</h2>
     </div>
     
-    <div class="grid-2-faq">
-        <div class="faq-item">
-            <button class="voice-btn" onclick="speakFAQ('Sangat aman, Bunda. Ozzaskin diformulasikan seratus persen bebas Merkuri dan Hidrokuinon, serta telah teruji Hypoallergenic sehingga bersahabat untuk ibu hamil dan menyusui.', this)" aria-label="Putar Jawaban">
-                <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-            </button>
-            <div>
-                <h3>Apakah Ozzaskin aman untuk Ibu Hamil dan Menyusui?</h3>
-                <p style="font-size: 0.95rem; margin-bottom: 0;">Sangat aman, Bunda. Ozzaskin diformulasikan seratus persen bebas Merkuri dan Hidrokuinon, serta telah teruji Hypoallergenic.</p>
+    <div id="faq-container">
+        <div class="faq-box">
+            <div class="faq-q" onclick="toggleFaq(this)">Apakah Ozzaskin aman untuk Ibu Hamil dan Menyusui? <span>+</span></div>
+            <div class="faq-a">
+                <p>Sangat aman, Bunda. Ozzaskin 100% bebas Merkuri dan Hidrokuinon. Formula hypoallergenic-nya teruji klinis menjaga kulit bumil dan busui tetap sehat tanpa efek samping.</p>
+                <button class="jarvis-voice-btn btn-voice" data-text="Sangat aman, Bunda. Ozzaskin 100% bebas Merkuri dan Hidrokuinon. Formula hypoallergenic-nya teruji klinis menjaga kulit bumil dan busui tetap sehat tanpa efek samping. Konsultasikan di WhatsApp sekarang.">🔊 Dengarkan</button>
+                <a href="https://wa.me/62811830330" target="_blank" style="display:block; margin-top:15px; font-weight:700; color:var(--primary); text-decoration:underline;">Tanya Admin via WA &raquo;</a>
             </div>
         </div>
         
-        <div class="faq-item">
-            <button class="voice-btn" onclick="speakFAQ('Tentu saja. Ozzaskin sudah mengantongi sertifikasi Halal resmi dari Majelis Ulama Indonesia dan terdaftar secara legal di BPOM.', this)" aria-label="Putar Jawaban">
-                <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-            </button>
-            <div>
-                <h3>Apakah produk ini sudah terdaftar resmi?</h3>
-                <p style="font-size: 0.95rem; margin-bottom: 0;">Tentu saja. Ozzaskin sudah mengantongi sertifikasi Halal resmi dari MUI dan terdaftar secara legal di BPOM Indonesia.</p>
+        <div class="faq-box">
+            <div class="faq-q" onclick="toggleFaq(this)">Apakah produk Ozzaskin sudah terdaftar resmi? <span>+</span></div>
+            <div class="faq-a">
+                <p>Tentu. Ozzaskin memiliki sertifikasi Halal MUI dan izin edar resmi BPOM. Keamanan bahan baku diawasi langsung di bawah standar klinis ketat.</p>
+                <button class="jarvis-voice-btn btn-voice" data-text="Tentu. Ozzaskin memiliki sertifikasi Halal MUI dan izin edar resmi BPOM. Keamanan bahan baku diawasi langsung di bawah standar klinis ketat.">🔊 Dengarkan</button>
+                <a href="https://wa.me/62811830330" target="_blank" style="display:block; margin-top:15px; font-weight:700; color:var(--primary); text-decoration:underline;">Amankan Promo di WA &raquo;</a>
             </div>
         </div>
 
-        <div class="faq-item">
-            <button class="voice-btn" onclick="speakFAQ('Dengan pemakaian rutin pagi dan malam, bahan aktif pencerah dan anti-aging di dalamnya akan bekerja optimal dalam beberapa minggu.', this)" aria-label="Putar Jawaban">
-                <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-            </button>
-            <div>
-                <h3>Berapa lama flek hitam di wajah bisa memudar?</h3>
-                <p style="font-size: 0.95rem; margin-bottom: 0;">Dengan pemakaian rutin, bahan aktif pencerah dan anti-aging di dalamnya akan bekerja optimal dalam beberapa minggu.</p>
+        <div class="faq-box">
+            <div class="faq-q" onclick="toggleFaq(this)">Berapa lama flek hitam memudar dengan Ozzaskin? <span>+</span></div>
+            <div class="faq-a">
+                <p>Hasil optimal terlihat dalam beberapa minggu pemakaian rutin pagi dan malam. Formula aktifnya memecah pigmentasi gelap sekaligus mencegah penuaan dini.</p>
+                <button class="jarvis-voice-btn btn-voice" data-text="Hasil optimal terlihat dalam beberapa minggu pemakaian rutin pagi dan malam. Formula aktifnya memecah pigmentasi gelap sekaligus mencegah penuaan dini. Hubungi konsultan kami di WhatsApp.">🔊 Dengarkan</button>
+                <a href="https://wa.me/62811830330" target="_blank" style="display:block; margin-top:15px; font-weight:700; color:var(--primary); text-decoration:underline;">Cek Harga Promo di WA &raquo;</a>
+            </div>
+        </div>
+        
+        <div class="faq-box">
+            <div class="faq-q" onclick="toggleFaq(this)">Apakah Ozzaskin cocok untuk kulit sangat sensitif? <span>+</span></div>
+            <div class="faq-a">
+                <p>Sangat cocok. Ozzaskin didesain khusus menutrisi lapisan kulit terdalam dengan kelembutan maksimal, mencegah iritasi kemerahan pada kulit sensitif.</p>
+                <button class="jarvis-voice-btn btn-voice" data-text="Sangat cocok. Ozzaskin didesain khusus menutrisi lapisan kulit terdalam dengan kelembutan maksimal, mencegah iritasi kemerahan pada kulit sensitif.">🔊 Dengarkan</button>
+                <a href="https://wa.me/62811830330" target="_blank" style="display:block; margin-top:15px; font-weight:700; color:var(--primary); text-decoration:underline;">Konsultasi Gratis di WA &raquo;</a>
+            </div>
+        </div>
+        
+        <div class="faq-box">
+            <div class="faq-q" onclick="toggleFaq(this)">Bagaimana cara pesan Ozzaskin yang 100% asli? <span>+</span></div>
+            <div class="faq-a">
+                <p>Pemesanan jaminan 100% original hanya melalui admin resmi kami. Silakan klik tombol WhatsApp di halaman ini untuk mendapatkan promo hari ini.</p>
+                <button class="jarvis-voice-btn btn-voice" data-text="Pemesanan jaminan seratus persen original hanya melalui admin resmi kami. Silakan klik tombol WhatsApp di halaman ini untuk mendapatkan promo hari ini.">🔊 Dengarkan</button>
+                <a href="https://wa.me/62811830330" target="_blank" style="display:block; margin-top:15px; font-weight:700; color:var(--primary); text-decoration:underline;">Order via WhatsApp Sekarang &raquo;</a>
             </div>
         </div>
     </div>
 
-    <!-- THE BRIDGE (SILO KEPADA MOTHERSHIP BARU) -->
-    <div class="silo-bridge">
-        <p>Jangan tunggu sampai flek hitam menebal dan membuat wajah terlihat lelah. Konsultasikan perawatan kulit Anda bersama <a href="https://dongkrakusaha.com/" target="_blank">Ozzaskin Official - Skincare Halal Spesialis Flek</a> untuk solusi yang aman, teruji klinis, dan menenangkan hati. Kirim pesan sekarang untuk mengembalikan cahaya alami wajah Anda hari ini.</p>
-    </div>
+    <!-- SILO BRIDGE & AGENCY CREDIT INJECTION -->
+    <div class="jarvis-footer-injection">
+        <div class="silo-bridge" style="background: var(--primary-light); padding: 25px; border-left: 6px solid var(--primary); margin-top: 30px; border-radius: 0 12px 12px 0;">
+            <p style="color: var(--primary); margin-bottom: 0;">Jangan tunggu sampai flek hitam menebal dan membuat wajah terlihat lelah. Konsultasikan perawatan kulit Anda bersama <a href="https://dongkrakusaha.com/" target="_blank" rel="dofollow" style="font-weight: 700; text-decoration: underline;">Ozzaskin Official - Skincare Halal Spesialis Flek</a> untuk solusi yang aman, teruji klinis, dan menenangkan hati. Klik tombol pemesanan WhatsApp sekarang untuk mengembalikan cahaya alami wajah Anda hari ini.</p>
+        </div>
+        
+        <!-- LSI INJECTION (WHITE HAT) -->
+        <div class="lsi-tags">
+            <strong style="color:var(--primary);">Pencarian Terkait (Tags):</strong> Ozzaskin halal MUI, skincare flek hitam BPOM, krim anti-aging aman busui, review Ozzaskin flek membandel, harga Ozzaskin original, perawatan flek membandel bebas hidrokuinon Jakarta Utara.
+        </div>
 
-    <!-- LSI INJECTION (WHITE HAT) -->
-    <div class="lsi-tags">
-        <strong>Pencarian Terkait (Tags):</strong> Ozzaskin halal MUI, skincare flek hitam BPOM, krim anti-aging aman busui, review Ozzaskin flek membandel, harga Ozzaskin original, perawatan flek membandel bebas hidrokuinon Jakarta Utara.
+        <div style="text-align: center; margin-top: 40px; padding-bottom: 20px;">
+            <p style="color: #475569; font-size: 0.9rem; margin-bottom: 5px;">© 2026 Ozzaskin Official. All Rights Reserved.</p>
+            <p style="color: #334155; font-size: 0.85rem;">SEO & Web Development by <a href="https://ciledugpromo.biz.id/" target="_blank" rel="nofollow noopener noreferrer" class="jarvis-agency-link" style="color:inherit; transition:0.3s;" onmouseover="this.style.color='#4c1d95'; this.style.fontWeight='bold';" onmouseout="this.style.color='inherit'; this.style.fontWeight='normal';">CiledugPromo</a></p>
+        </div>
     </div>
 </section>
 
-<!-- AGENCY CREDIT (FOOTER SILUMAN) -->
-<footer>
-    <div class="container">
-        <p class="agency-credit-l1">© 2026 Ozzaskin Official. All Rights Reserved.</p>
-        <p class="agency-credit-l2">SEO & Web Development by <a href="https://dongkrakusaha.com/" target="_blank" rel="nofollow noopener noreferrer" class="agency-link">CiledugPromo</a></p>
-    </div>
-</footer>
-
-<!-- DUAL-TRAP CTA LAYER (STATIC AI & WHATSAPP) -->
+<!-- DUAL-TRAP CTA LAYER -->
 <div class="trap-container">
     <div class="cta-btn cta-ai" id="ai-trigger" aria-label="Tanya Asisten AI">
         <img src="https://dongkrakusaha.com/gambarbebas/1142920260706-035633_logo%20ai%20tanya%20ai.webp" alt="Ozzaskin AI">
@@ -319,7 +329,7 @@
     <div class="ai-body" id="chat-body">
         <div class="msg msg-ai">Assalamualaikum Bunda! Masya Allah, terima kasih sudah mampir. Ada yang bisa kami bantu seputar perawatan kulit bebas flek bersama Ozzaskin?</div>
     </div>
-    <div class="typing" id="typing-indicator">Asisten sedang menganalisis...</div>
+    <div class="typing" id="typing-indicator">Asisten sedang mengetik...</div>
     <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pesan Bunda..." onkeypress="handleChat(event)">
         <button onclick="processAI()">&#10148;</button>
@@ -327,30 +337,44 @@
 </div>
 
 <script>
-    // 1. SOLUSI VIDEO BLANK SCREEN & RASIO 9:16
+    // 1. SOLUSI VIDEO BLANK SCREEN (RASIO 9:16 + playsinline)
     function loadVSL(element) {
-        // Menggunakan playsinline dan format tag video modern
         element.innerHTML = '<video controls autoplay playsinline style="width:100%; height:100%; object-fit:cover; border-radius: 16px;"><source src="video/Ozzaskin-ustazah-oki.mp4" type="video/mp4">Browser Bunda tidak mendukung pemutaran video.</video>';
         element.style.cursor = 'default';
         element.style.border = 'none';
     }
 
-    // 2. LOGIKA VOICE FAQ (AEO) MOTHERSHIP V10
-    const voiceSynth = window.speechSynthesis;
-    function speakFAQ(text, buttonEl) {
-        document.querySelectorAll('.voice-btn').forEach(btn => btn.classList.remove('playing'));
-        if (voiceSynth.speaking) voiceSynth.cancel();
-        
-        let utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = 'id-ID';
-        utterance.rate = 0.88;
-        utterance.pitch = 0.82;
-        
-        buttonEl.classList.add('playing');
-        utterance.onend = () => buttonEl.classList.remove('playing');
-        utterance.onerror = () => buttonEl.classList.remove('playing');
-        voiceSynth.speak(utterance);
+    // 2. LOGIKA VOICE FAQ (AEO & GEO)
+    function toggleFaq(el) {
+        let answer = el.nextElementSibling;
+        let sign = el.querySelector('span');
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+            sign.innerHTML = "+";
+        } else {
+            answer.style.display = "block";
+            sign.innerHTML = "-";
+        }
     }
+
+    // Modul SpeechSynthesis untuk Voice FAQ
+    document.querySelectorAll('.jarvis-voice-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.jarvis-voice-btn').forEach(b => b.classList.remove('playing'));
+            window.speechSynthesis.cancel();
+            
+            let textToSpeak = this.getAttribute('data-text');
+            let utterance = new SpeechSynthesisUtterance(textToSpeak);
+            utterance.lang = 'id-ID';
+            utterance.rate = 0.88;
+            utterance.pitch = 0.82;
+            
+            this.classList.add('playing');
+            utterance.onend = () => this.classList.remove('playing');
+            utterance.onerror = () => this.classList.remove('playing');
+            window.speechSynthesis.speak(utterance);
+        });
+    });
 
     // 3. TOGGLE UI ASISTEN AI
     const btnAi = document.getElementById('ai-trigger');
@@ -360,59 +384,63 @@
     btnAi.addEventListener('click', () => { boxAi.style.display = boxAi.style.display === 'flex' ? 'none' : 'flex'; });
     closeAi.addEventListener('click', () => { boxAi.style.display = 'none'; });
 
-    // 4. LOGIKA AI RANDOMIZER
+    // 4. OTAK AI: MODE SKINCARE SPESIALIS FLEK (NLP REGEX 800MS)
     function handleChat(e) { if (e.key === 'Enter') processAI(); }
 
     function processAI() {
         let inputField = document.getElementById('ai-input');
-        let text = inputField.value.trim();
-        if(!text) return;
+        let userText = inputField.value.trim().toLowerCase();
+        if(!userText) return;
 
         let chatBody = document.getElementById('chat-body');
         let typing = document.getElementById('typing-indicator');
 
-        chatBody.innerHTML += `<div class="msg msg-user">${text}</div>`;
+        // Tampilkan teks user
+        chatBody.innerHTML += `<div class="msg msg-user">${inputField.value.trim()}</div>`;
         inputField.value = '';
         chatBody.scrollTop = chatBody.scrollHeight;
+        
+        // Tampilkan indikator mengetik
+        typing.innerText = "Asisten Ozzaskin sedang mengetik...";
         typing.style.display = 'block';
-
-        const respFlek = [
-            "Masya Allah, Bunda tidak perlu khawatir ya. Ozzaskin diformulasikan khusus dengan bahan alami untuk memudarkan flek hitam dari akarnya.",
-            "Insya Allah flek membandel dan wajah kusam bisa teratasi, Bun. Rutin pakai Ozzaskin pagi dan malam ya."
-        ];
-        const respBumil = [
-            "Alhamdulillah, pertanyaan yang bagus Bunda! Ozzaskin 100% bebas Merkuri dan sangat bersahabat untuk bumil & busui.",
-            "Tenang saja Bunda sayang, produk kami Hypoallergenic dan bebas bahan kimia berbahaya. Super aman untuk janin dan ASI."
-        ];
-        const respLegal = [
-            "Insya Allah, Bunda. Produk Ozzaskin ini sudah tersertifikasi Halal MUI dan terdaftar resmi di BPOM.",
-            "Keamanan terjamin, Bun! Sudah lulus uji klinis BPOM dan bersertifikat Halal. Hati tenang pakainya."
-        ];
-        const respOrder = [
-            "Alhamdulillah, Bunda tertarik! Untuk pemesanan otomatis, silakan isi form pemesanan di atas atau klik tautan WhatsApp di bawah ini ya.",
-            "Mari Bunda amankan slot promonya sebelum kehabisan. Tim admin kami siap memproses pesanan Bunda sekarang."
-        ];
-        const respDefault = [
-            "Baik Bunda, ada hal spesifik lain seputar perawatan wajah yang ingin didiskusikan?",
-            "Masya Allah. Silakan Bunda tanyakan keluhan kulitnya, atau langsung klik tautan WhatsApp di bawah untuk konsultasi eksklusif ya."
-        ];
-
-        function getRandom(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
 
         setTimeout(() => {
             typing.style.display = 'none';
-            let reply = "";
-            let waLink = "<br><br><a href='https://wa.me/62811830330' target='_blank' style='color:var(--primary); font-weight:700; text-decoration:underline;'>Buka Chat WhatsApp Admin</a>";
+            let aiReply = "";
+            let waCallToAction = `<br><br><a href="https://wa.me/62811830330" target="_blank" style="color:var(--primary); font-weight:700; text-decoration:underline; display:inline-block; margin-top:5px;">&raquo; Chat Admin di Sini</a>`;
 
-            if (text.match(/(flek|kusam|hitam|noda)/i)) reply = getRandom(respFlek);
-            else if (text.match(/(bumil|busui|hamil|menyusui)/i)) reply = getRandom(respBumil);
-            else if (text.match(/(bpom|halal|oki|shindy|ricis|aman)/i)) reply = getRandom(respLegal);
-            else if (text.match(/(harga|pesan|beli|order|promo|berapa)/i)) reply = getRandom(respOrder);
-            else reply = getRandom(respDefault);
+            // 1. PILAR HARGA 
+            if (userText.match(/harga|biaya|rab|berapa|pricelist|promo|murah|budget/)) { 
+                aiReply = `Harga Ozzaskin premium sangat terjangkau karena sedang ada promo spesial, Bunda. Boleh diinfokan kondisi flek hitamnya agar kami sesuaikan paketnya?`; 
+            } 
+            // 2. PILAR PROSES 
+            else if (userText.match(/lama|waktu|proses|tahap|hari|cara|pakai/)) { 
+                aiReply = `Cukup aplikasikan merata setelah wajah dibersihkan. Dengan pemakaian rutin pagi dan malam, formula aktif kami memudarkan noda membandel secara cepat dan aman.`; 
+            } 
+            // 3. PILAR KEPERCAYAAN/BAHAN 
+            else if (userText.match(/bahan|material|kualitas|awet|standar|garansi|aman|bagus|bpom|bumil|busui|halal|merkuri/)) { 
+                aiReply = `Ozzaskin dari Ustazah Oki dijamin 100% bebas Merkuri dan Hidrokuinon. Halal MUI, lolos BPOM, dan Hypoallergenic sehingga garansi super aman untuk ibu hamil dan menyusui.`; 
+            } 
+            // 4. PILAR LOKASI 
+            else if (userText.match(/lokasi|dimana|area|alamat|jauh|jakarta|pusat|utara|selatan|barat|timur|kirim/)) { 
+                aiReply = `Pusat pengiriman kami melayani prioritas cepat ke seluruh area DKI Jakarta dan sekitarnya, Bunda. Paket dijamin aman sampai tujuan.`; 
+            } 
+            // 5. PILAR TINDAKAN/DEAL 
+            else if (userText.match(/pesan|order|survey|survei|bayar|ketemu|jadwal|whatsapp|wa|oke|mau|beli/)) { 
+                aiReply = `Alhamdulillah, keputusan yang tepat! Silakan klik tombol WhatsApp (ikon hijau) sekarang untuk mengamankan slot promo Bunda sebelum kehabisan.`; 
+            } 
+            // KATA SAPAAN AWAL
+            else if (userText.match(/halo|hai|pagi|siang|sore|malam|ping|p|assalamualaikum/)) { 
+                aiReply = `Assalamualaikum Bunda! Saya Asisten Virtual Ozzaskin Official. Ada yang bisa dibantu terkait solusi flek hitam, bahan produk, atau info promo hari ini?`; 
+            } 
+            // 6. THE MAGIC FALLBACK (Sapu Jagat)
+            else { 
+                aiReply = `Pertanyaan yang sangat spesifik, Bunda! Karena kondisi kulit setiap orang memiliki keunikan, saya sarankan Bunda berdiskusi langsung dengan Konsultan Utama kami. Silakan klik ikon WhatsApp di kanan bawah ya untuk fast-response. Ada hal umum lain yang ingin ditanyakan?`; 
+            }
 
-            chatBody.innerHTML += `<div class="msg msg-ai">${reply} ${waLink}</div>`;
+            chatBody.innerHTML += `<div class="msg msg-ai">${aiReply} ${waCallToAction}</div>`;
             chatBody.scrollTop = chatBody.scrollHeight;
-        }, 1200);
+        }, 800);
     }
 
     // 5. INTERCEPTOR OMNI FORM (WEB3FORMS + GOOGLE SHEETS + WA)
